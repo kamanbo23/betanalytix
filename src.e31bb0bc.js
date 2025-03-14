@@ -52094,7 +52094,60 @@ var _Funnel = require("./numberAxis/Funnel");
 var _FunnelChart = require("./chart/FunnelChart");
 var _Trapezoid = require("./shape/Trapezoid");
 var _Global = require("./util/Global");
-},{"./container/Surface":"nv6u","./container/Layer":"ZKbd","./component/Legend":"HJnl","./component/DefaultLegendContent":"sDJB","./component/Tooltip":"VZUA","./component/DefaultTooltipContent":"r0cu","./component/ResponsiveContainer":"KW5S","./component/Cell":"PX8W","./component/Text":"fjxc","./component/Label":"YwoJ","./component/LabelList":"jRHp","./component/Customized":"zavF","./shape/Sector":"jFnZ","./shape/Curve":"c70p","./shape/Rectangle":"POtl","./shape/Polygon":"Qhip","./shape/Dot":"cdgZ","./shape/Cross":"t50L","./shape/Symbols":"MFvR","./polar/PolarGrid":"wLwX","./polar/PolarRadiusAxis":"STWD","./polar/PolarAngleAxis":"kcpl","./polar/Pie":"fKzq","./polar/Radar":"OQoP","./polar/RadialBar":"nEAs","./cartesian/Brush":"WC7j","./cartesian/ReferenceLine":"bQNf","./cartesian/ReferenceDot":"oSq8","./cartesian/ReferenceArea":"N7Pq","./cartesian/CartesianAxis":"GDRs","./cartesian/CartesianGrid":"HrVi","./cartesian/Line":"qESW","./cartesian/Area":"F70A","./cartesian/Bar":"EF0L","./cartesian/Scatter":"yuzc","./cartesian/XAxis":"ImGm","./cartesian/YAxis":"EUJD","./cartesian/ZAxis":"o7Ja","./cartesian/ErrorBar":"EDMI","./chart/LineChart":"XLXE","./chart/BarChart":"j7EF","./chart/PieChart":"Eztw","./chart/Treemap":"n4nC","./chart/Sankey":"LOUJ","./chart/RadarChart":"H08H","./chart/ScatterChart":"mrWJ","./chart/AreaChart":"hPgu","./chart/RadialBarChart":"T29X","./chart/ComposedChart":"UN5u","./chart/SunburstChart":"E9Bj","./numberAxis/Funnel":"tGEe","./chart/FunnelChart":"yScM","./shape/Trapezoid":"Dob8","./util/Global":"lzK7"}],"mh1v":[function(require,module,exports) {
+},{"./container/Surface":"nv6u","./container/Layer":"ZKbd","./component/Legend":"HJnl","./component/DefaultLegendContent":"sDJB","./component/Tooltip":"VZUA","./component/DefaultTooltipContent":"r0cu","./component/ResponsiveContainer":"KW5S","./component/Cell":"PX8W","./component/Text":"fjxc","./component/Label":"YwoJ","./component/LabelList":"jRHp","./component/Customized":"zavF","./shape/Sector":"jFnZ","./shape/Curve":"c70p","./shape/Rectangle":"POtl","./shape/Polygon":"Qhip","./shape/Dot":"cdgZ","./shape/Cross":"t50L","./shape/Symbols":"MFvR","./polar/PolarGrid":"wLwX","./polar/PolarRadiusAxis":"STWD","./polar/PolarAngleAxis":"kcpl","./polar/Pie":"fKzq","./polar/Radar":"OQoP","./polar/RadialBar":"nEAs","./cartesian/Brush":"WC7j","./cartesian/ReferenceLine":"bQNf","./cartesian/ReferenceDot":"oSq8","./cartesian/ReferenceArea":"N7Pq","./cartesian/CartesianAxis":"GDRs","./cartesian/CartesianGrid":"HrVi","./cartesian/Line":"qESW","./cartesian/Area":"F70A","./cartesian/Bar":"EF0L","./cartesian/Scatter":"yuzc","./cartesian/XAxis":"ImGm","./cartesian/YAxis":"EUJD","./cartesian/ZAxis":"o7Ja","./cartesian/ErrorBar":"EDMI","./chart/LineChart":"XLXE","./chart/BarChart":"j7EF","./chart/PieChart":"Eztw","./chart/Treemap":"n4nC","./chart/Sankey":"LOUJ","./chart/RadarChart":"H08H","./chart/ScatterChart":"mrWJ","./chart/AreaChart":"hPgu","./chart/RadialBarChart":"T29X","./chart/ComposedChart":"UN5u","./chart/SunburstChart":"E9Bj","./numberAxis/Funnel":"tGEe","./chart/FunnelChart":"yScM","./shape/Trapezoid":"Dob8","./util/Global":"lzK7"}],"Kl7u":[function(require,module,exports) {
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+'use strict';
+
+var f = require("react"),
+  k = Symbol.for("react.element"),
+  l = Symbol.for("react.fragment"),
+  m = Object.prototype.hasOwnProperty,
+  n = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+  p = {
+    key: !0,
+    ref: !0,
+    __self: !0,
+    __source: !0
+  };
+function q(c, a, g) {
+  var b,
+    d = {},
+    e = null,
+    h = null;
+  void 0 !== g && (e = "" + g);
+  void 0 !== a.key && (e = "" + a.key);
+  void 0 !== a.ref && (h = a.ref);
+  for (b in a) m.call(a, b) && !p.hasOwnProperty(b) && (d[b] = a[b]);
+  if (c && c.defaultProps) for (b in a = c.defaultProps, a) void 0 === d[b] && (d[b] = a[b]);
+  return {
+    $$typeof: k,
+    type: c,
+    key: e,
+    ref: h,
+    props: d,
+    _owner: n.current
+  };
+}
+exports.Fragment = l;
+exports.jsx = q;
+exports.jsxs = q;
+},{"react":"n8MK"}],"plwR":[function(require,module,exports) {
+'use strict';
+
+if ("production" === 'production') {
+  module.exports = require('./cjs/react-jsx-runtime.production.min.js');
+} else {
+  module.exports = require('./cjs/react-jsx-runtime.development.js');
+}
+},{"./cjs/react-jsx-runtime.production.min.js":"Kl7u"}],"mh1v":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -52107,6 +52160,7 @@ var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/sli
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _react = _interopRequireWildcard(require("react"));
 var _recharts = require("recharts");
+var _jsxRuntime = require("react/jsx-runtime");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
@@ -52116,7 +52170,6 @@ function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e
 // import { fetchBettingData, fetchUserStats } from '../services/api';
 // import { calculateMetrics, processApiData } from '../utils/dataProcessing';
 // import { Chart } from '../components/Chart';
-
 function Dashboard(_ref) {
   var navigateToBetLogger = _ref.navigateToBetLogger;
   var _useState = (0, _react.useState)(true),
@@ -52594,7 +52647,7 @@ function Dashboard(_ref) {
   // Render actual charts instead of placeholders
   var renderChart = function renderChart(type) {
     if (!bettingData) {
-      return /*#__PURE__*/_react.default.createElement("div", {
+      return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "chart-placeholder",
         style: {
           height: '100%',
@@ -52606,166 +52659,178 @@ function Dashboard(_ref) {
           borderRadius: '8px',
           background: 'rgba(15, 15, 15, 0.5)',
           border: '1px solid rgba(255, 255, 255, 0.05)'
-        }
-      }, /*#__PURE__*/_react.default.createElement("div", {
-        style: {
-          fontSize: '48px',
-          marginBottom: '15px'
-        }
-      }, "\uD83D\uDCCA"), /*#__PURE__*/_react.default.createElement("p", {
-        style: {
-          textAlign: 'center',
-          color: '#b0b0b0'
-        }
-      }, "No data available to display charts"));
+        },
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          style: {
+            fontSize: '48px',
+            marginBottom: '15px'
+          },
+          children: "\uD83D\uDCCA"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          style: {
+            textAlign: 'center',
+            color: '#b0b0b0'
+          },
+          children: "No data available to display charts"
+        })]
+      });
     }
 
     // Different chart rendering based on type
     switch (type) {
       case 'Profit/Loss Trend':
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 300
-        }, /*#__PURE__*/_react.default.createElement(_recharts.AreaChart, {
-          data: bettingData.profitTrend,
-          margin: {
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0
-          }
-        }, /*#__PURE__*/_react.default.createElement("defs", null, /*#__PURE__*/_react.default.createElement("linearGradient", {
-          id: "colorProfit",
-          x1: "0",
-          y1: "0",
-          x2: "0",
-          y2: "1"
-        }, /*#__PURE__*/_react.default.createElement("stop", {
-          offset: "5%",
-          stopColor: "#2196f3",
-          stopOpacity: 0.8
-        }), /*#__PURE__*/_react.default.createElement("stop", {
-          offset: "95%",
-          stopColor: "#2196f3",
-          stopOpacity: 0
-        }))), /*#__PURE__*/_react.default.createElement(_recharts.XAxis, {
-          dataKey: "date",
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.YAxis, {
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.CartesianGrid, {
-          strokeDasharray: "3 3",
-          stroke: "rgba(255,255,255,0.1)"
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Area, {
-          type: "monotone",
-          dataKey: "profit",
-          stroke: "#2196f3",
-          fillOpacity: 1,
-          fill: "url(#colorProfit)"
-        })));
+          height: 300,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.AreaChart, {
+            data: bettingData.profitTrend,
+            margin: {
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("defs", {
+              children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("linearGradient", {
+                id: "colorProfit",
+                x1: "0",
+                y1: "0",
+                x2: "0",
+                y2: "1",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("stop", {
+                  offset: "5%",
+                  stopColor: "#2196f3",
+                  stopOpacity: 0.8
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("stop", {
+                  offset: "95%",
+                  stopColor: "#2196f3",
+                  stopOpacity: 0
+                })]
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.XAxis, {
+              dataKey: "date",
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.YAxis, {
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.CartesianGrid, {
+              strokeDasharray: "3 3",
+              stroke: "rgba(255,255,255,0.1)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Area, {
+              type: "monotone",
+              dataKey: "profit",
+              stroke: "#2196f3",
+              fillOpacity: 1,
+              fill: "url(#colorProfit)"
+            })]
+          })
+        });
       case 'Win Rate by Sport':
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 250
-        }, /*#__PURE__*/_react.default.createElement(_recharts.BarChart, {
-          data: bettingData.sportBreakdown,
-          margin: {
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0
-          }
-        }, /*#__PURE__*/_react.default.createElement(_recharts.CartesianGrid, {
-          strokeDasharray: "3 3",
-          stroke: "rgba(255,255,255,0.1)"
-        }), /*#__PURE__*/_react.default.createElement(_recharts.XAxis, {
-          dataKey: "sport",
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.YAxis, {
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Legend, {
-          wrapperStyle: {
-            color: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Bar, {
-          dataKey: "winRate",
-          name: "Win Rate (%)",
-          fill: "#8884d8"
-        })));
+          height: 250,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.BarChart, {
+            data: bettingData.sportBreakdown,
+            margin: {
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.CartesianGrid, {
+              strokeDasharray: "3 3",
+              stroke: "rgba(255,255,255,0.1)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.XAxis, {
+              dataKey: "sport",
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.YAxis, {
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Legend, {
+              wrapperStyle: {
+                color: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Bar, {
+              dataKey: "winRate",
+              name: "Win Rate (%)",
+              fill: "#8884d8"
+            })]
+          })
+        });
       case 'Profit by Bet Type':
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 250
-        }, /*#__PURE__*/_react.default.createElement(_recharts.BarChart, {
-          data: bettingData.betTypeBreakdown,
-          margin: {
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0
-          }
-        }, /*#__PURE__*/_react.default.createElement(_recharts.CartesianGrid, {
-          strokeDasharray: "3 3",
-          stroke: "rgba(255,255,255,0.1)"
-        }), /*#__PURE__*/_react.default.createElement(_recharts.XAxis, {
-          dataKey: "type",
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.YAxis, {
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Legend, {
-          wrapperStyle: {
-            color: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Bar, {
-          dataKey: "profit",
-          name: "Profit",
-          fill: "#4caf50"
-        })));
+          height: 250,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.BarChart, {
+            data: bettingData.betTypeBreakdown,
+            margin: {
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.CartesianGrid, {
+              strokeDasharray: "3 3",
+              stroke: "rgba(255,255,255,0.1)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.XAxis, {
+              dataKey: "type",
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.YAxis, {
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Legend, {
+              wrapperStyle: {
+                color: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Bar, {
+              dataKey: "profit",
+              name: "Profit",
+              fill: "#4caf50"
+            })]
+          })
+        });
       case 'Sports Breakdown':
         // Create more readable data format for pie chart
         var sportsPieData = bettingData.sportBreakdown.map(function (item) {
@@ -52775,40 +52840,43 @@ function Dashboard(_ref) {
           };
         });
         var SPORTS_COLORS = ['#8884d8', '#4caf50', '#ff5722', '#2196f3', '#ffc107', '#9c27b0'];
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 250
-        }, /*#__PURE__*/_react.default.createElement(_recharts.PieChart, null, /*#__PURE__*/_react.default.createElement(_recharts.Pie, {
-          data: sportsPieData,
-          cx: "50%",
-          cy: "50%",
-          labelLine: false,
-          outerRadius: 80,
-          fill: "#8884d8",
-          dataKey: "value",
-          nameKey: "name",
-          label: function label(_ref3) {
-            var name = _ref3.name,
-              percent = _ref3.percent;
-            return "".concat(name, ": ").concat((percent * 100).toFixed(0), "%");
-          }
-        }, sportsPieData.map(function (entry, index) {
-          return /*#__PURE__*/_react.default.createElement(_recharts.Cell, {
-            key: "cell-".concat(index),
-            fill: SPORTS_COLORS[index % SPORTS_COLORS.length]
-          });
-        })), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        })));
+          height: 250,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.PieChart, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Pie, {
+              data: sportsPieData,
+              cx: "50%",
+              cy: "50%",
+              labelLine: false,
+              outerRadius: 80,
+              fill: "#8884d8",
+              dataKey: "value",
+              nameKey: "name",
+              label: function label(_ref3) {
+                var name = _ref3.name,
+                  percent = _ref3.percent;
+                return "".concat(name, ": ").concat((percent * 100).toFixed(0), "%");
+              },
+              children: sportsPieData.map(function (entry, index) {
+                return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Cell, {
+                  fill: SPORTS_COLORS[index % SPORTS_COLORS.length]
+                }, "cell-".concat(index));
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            })]
+          })
+        });
       case 'Bet Type Analysis':
         // Create more readable data format for pie chart
         var typePieData = bettingData.betTypeBreakdown.map(function (item) {
@@ -52818,40 +52886,43 @@ function Dashboard(_ref) {
           };
         });
         var TYPE_COLORS = ['#ff5722', '#4caf50', '#2196f3', '#ffc107', '#9c27b0'];
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 250
-        }, /*#__PURE__*/_react.default.createElement(_recharts.PieChart, null, /*#__PURE__*/_react.default.createElement(_recharts.Pie, {
-          data: typePieData,
-          cx: "50%",
-          cy: "50%",
-          labelLine: false,
-          outerRadius: 80,
-          fill: "#8884d8",
-          dataKey: "value",
-          nameKey: "name",
-          label: function label(_ref4) {
-            var name = _ref4.name,
-              percent = _ref4.percent;
-            return "".concat(name, ": ").concat((percent * 100).toFixed(0), "%");
-          }
-        }, typePieData.map(function (entry, index) {
-          return /*#__PURE__*/_react.default.createElement(_recharts.Cell, {
-            key: "cell-".concat(index),
-            fill: TYPE_COLORS[index % TYPE_COLORS.length]
-          });
-        })), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        })));
+          height: 250,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.PieChart, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Pie, {
+              data: typePieData,
+              cx: "50%",
+              cy: "50%",
+              labelLine: false,
+              outerRadius: 80,
+              fill: "#8884d8",
+              dataKey: "value",
+              nameKey: "name",
+              label: function label(_ref4) {
+                var name = _ref4.name,
+                  percent = _ref4.percent;
+                return "".concat(name, ": ").concat((percent * 100).toFixed(0), "%");
+              },
+              children: typePieData.map(function (entry, index) {
+                return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Cell, {
+                  fill: TYPE_COLORS[index % TYPE_COLORS.length]
+                }, "cell-".concat(index));
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            })]
+          })
+        });
       case 'Stake vs. ROI':
         // Generate a scatter plot of stake vs ROI
         // For demo, we'll create synthetic data based on betting patterns
@@ -52865,49 +52936,51 @@ function Dashboard(_ref) {
             roi: roi
           };
         });
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 250
-        }, /*#__PURE__*/_react.default.createElement(_recharts.BarChart, {
-          data: stakeRoiData,
-          margin: {
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0
-          }
-        }, /*#__PURE__*/_react.default.createElement(_recharts.CartesianGrid, {
-          strokeDasharray: "3 3",
-          stroke: "rgba(255,255,255,0.1)"
-        }), /*#__PURE__*/_react.default.createElement(_recharts.XAxis, {
-          dataKey: "name",
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.YAxis, {
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Legend, {
-          wrapperStyle: {
-            color: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Bar, {
-          dataKey: "roi",
-          name: "ROI (%)",
-          fill: "#ff5722"
-        })));
+          height: 250,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.BarChart, {
+            data: stakeRoiData,
+            margin: {
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.CartesianGrid, {
+              strokeDasharray: "3 3",
+              stroke: "rgba(255,255,255,0.1)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.XAxis, {
+              dataKey: "name",
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.YAxis, {
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Legend, {
+              wrapperStyle: {
+                color: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Bar, {
+              dataKey: "roi",
+              name: "ROI (%)",
+              fill: "#ff5722"
+            })]
+          })
+        });
       case 'Time of Day Performance':
         // Generate synthetic time of day performance data
         var timeOfDayData = [{
@@ -52927,55 +53000,57 @@ function Dashboard(_ref) {
           winRate: 54,
           bets: 22
         }];
-        return /*#__PURE__*/_react.default.createElement(_recharts.ResponsiveContainer, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.ResponsiveContainer, {
           width: "100%",
-          height: 250
-        }, /*#__PURE__*/_react.default.createElement(_recharts.BarChart, {
-          data: timeOfDayData,
-          margin: {
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0
-          }
-        }, /*#__PURE__*/_react.default.createElement(_recharts.CartesianGrid, {
-          strokeDasharray: "3 3",
-          stroke: "rgba(255,255,255,0.1)"
-        }), /*#__PURE__*/_react.default.createElement(_recharts.XAxis, {
-          dataKey: "time",
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.YAxis, {
-          tick: {
-            fill: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Tooltip, {
-          contentStyle: {
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333'
-          },
-          labelStyle: {
-            color: '#2196f3'
-          },
-          itemStyle: {
-            color: '#e0e0e0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Legend, {
-          wrapperStyle: {
-            color: '#b0b0b0'
-          }
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Bar, {
-          dataKey: "winRate",
-          name: "Win Rate (%)",
-          fill: "#2196f3"
-        }), /*#__PURE__*/_react.default.createElement(_recharts.Bar, {
-          dataKey: "bets",
-          name: "Number of Bets",
-          fill: "#9c27b0"
-        })));
+          height: 250,
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_recharts.BarChart, {
+            data: timeOfDayData,
+            margin: {
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.CartesianGrid, {
+              strokeDasharray: "3 3",
+              stroke: "rgba(255,255,255,0.1)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.XAxis, {
+              dataKey: "time",
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.YAxis, {
+              tick: {
+                fill: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Tooltip, {
+              contentStyle: {
+                backgroundColor: '#1a1a1a',
+                border: '1px solid #333'
+              },
+              labelStyle: {
+                color: '#2196f3'
+              },
+              itemStyle: {
+                color: '#e0e0e0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Legend, {
+              wrapperStyle: {
+                color: '#b0b0b0'
+              }
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Bar, {
+              dataKey: "winRate",
+              name: "Win Rate (%)",
+              fill: "#2196f3"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_recharts.Bar, {
+              dataKey: "bets",
+              name: "Number of Bets",
+              fill: "#9c27b0"
+            })]
+          })
+        });
       default:
-        return /*#__PURE__*/_react.default.createElement("div", {
+        return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           className: "chart-placeholder",
           style: {
             height: '100%',
@@ -52987,27 +53062,31 @@ function Dashboard(_ref) {
             borderRadius: '8px',
             background: 'rgba(15, 15, 15, 0.5)',
             border: '1px solid rgba(255, 255, 255, 0.05)'
-          }
-        }, /*#__PURE__*/_react.default.createElement("div", {
-          style: {
-            fontSize: '48px',
-            marginBottom: '15px'
-          }
-        }, "\uD83D\uDCCA"), /*#__PURE__*/_react.default.createElement("p", {
-          style: {
-            textAlign: 'center',
-            color: '#b0b0b0'
-          }
-        }, type, " Chart", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", {
-          style: {
-            fontSize: '0.9rem'
-          }
-        }, "(Data visualization to be implemented)")));
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            style: {
+              fontSize: '48px',
+              marginBottom: '15px'
+            },
+            children: "\uD83D\uDCCA"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+            style: {
+              textAlign: 'center',
+              color: '#b0b0b0'
+            },
+            children: [type, " Chart", /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+              style: {
+                fontSize: '0.9rem'
+              },
+              children: "(Data visualization to be implemented)"
+            })]
+          })]
+        });
     }
   };
   var renderRecentBets = function renderRecentBets() {
     if (!bettingData || !bettingData.recentBets || bettingData.recentBets.length === 0) {
-      return /*#__PURE__*/_react.default.createElement("div", {
+      return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
         className: "empty-state",
         style: {
           display: 'flex',
@@ -53019,49 +53098,54 @@ function Dashboard(_ref) {
           background: 'rgba(25, 118, 210, 0.05)',
           borderRadius: '8px',
           border: '1px dashed rgba(25, 118, 210, 0.3)'
-        }
-      }, /*#__PURE__*/_react.default.createElement("div", {
-        style: {
-          fontSize: '48px',
-          marginBottom: '15px'
-        }
-      }, "\uD83D\uDCDD"), /*#__PURE__*/_react.default.createElement("h3", {
-        style: {
-          marginBottom: '10px',
-          color: '#e2e2e2'
-        }
-      }, "No Bets Found"), /*#__PURE__*/_react.default.createElement("p", {
-        style: {
-          maxWidth: '500px',
-          color: '#b0b0b0',
-          marginBottom: '20px'
-        }
-      }, "You haven't logged any bets yet, or you've cleared your data. Start tracking your betting performance by logging your bets!"), /*#__PURE__*/_react.default.createElement("button", {
-        className: "log-bet-button",
-        onClick: function onClick() {
-          // Navigate to BetLogger component
-          if (navigateToBetLogger) {
-            // Use provided navigation function if available
-            navigateToBetLogger();
-          } else {
-            // Try to navigate via window.location as fallback
-            window.location.href = '/betlogger';
-          }
         },
-        style: {
-          background: 'linear-gradient(135deg, #1976d2 0%, #2196f3 100%)',
-          color: 'white',
-          border: 'none',
-          borderRadius: '6px',
-          padding: '10px 20px',
-          cursor: 'pointer',
-          fontWeight: 'bold',
-          textTransform: 'uppercase',
-          fontSize: '0.875rem',
-          boxShadow: '0 2px 8px rgba(33, 150, 243, 0.3)',
-          transition: 'all 0.3s ease'
-        }
-      }, "Start Logging Bets"));
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          style: {
+            fontSize: '48px',
+            marginBottom: '15px'
+          },
+          children: "\uD83D\uDCDD"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+          style: {
+            marginBottom: '10px',
+            color: '#e2e2e2'
+          },
+          children: "No Bets Found"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          style: {
+            maxWidth: '500px',
+            color: '#b0b0b0',
+            marginBottom: '20px'
+          },
+          children: "You haven't logged any bets yet, or you've cleared your data. Start tracking your betting performance by logging your bets!"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: "log-bet-button",
+          onClick: function onClick() {
+            // Navigate to BetLogger component
+            if (navigateToBetLogger) {
+              // Use provided navigation function if available
+              navigateToBetLogger();
+            } else {
+              // Try to navigate via window.location as fallback
+              window.location.href = '/betlogger';
+            }
+          },
+          style: {
+            background: 'linear-gradient(135deg, #1976d2 0%, #2196f3 100%)',
+            color: 'white',
+            border: 'none',
+            borderRadius: '6px',
+            padding: '10px 20px',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+            fontSize: '0.875rem',
+            boxShadow: '0 2px 8px rgba(33, 150, 243, 0.3)',
+            transition: 'all 0.3s ease'
+          },
+          children: "Start Logging Bets"
+        })]
+      });
     }
 
     // Use the isDemo flag to determine if these are demo bets or user bets
@@ -53069,490 +53153,674 @@ function Dashboard(_ref) {
     var isPendingResult = bettingData.recentBets.some(function (bet) {
       return bet.result === 'pending';
     });
-    return /*#__PURE__*/_react.default.createElement("div", {
-      className: "recent-bets"
-    }, isDemo && /*#__PURE__*/_react.default.createElement("div", {
-      className: "demo-data-banner",
-      style: {
-        background: 'rgba(255, 87, 51, 0.1)',
-        border: '1px solid rgba(255, 87, 51, 0.3)',
-        borderRadius: '8px',
-        padding: '12px 16px',
-        marginBottom: '20px',
-        color: '#ff5733',
-        fontSize: '0.95rem',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-      }
-    }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
-      style: {
-        margin: 0,
-        fontWeight: 'bold'
-      }
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      style: {
-        marginRight: '8px'
-      }
-    }, "\u26A0\uFE0F"), "You're viewing DEMO DATA"), /*#__PURE__*/_react.default.createElement("p", {
-      style: {
-        margin: '5px 0 0 0',
-        fontSize: '0.85rem',
-        color: '#e0e0e0'
-      }
-    }, "These are sample bets to demonstrate the dashboard. Log your own bets to replace this demo data!")), /*#__PURE__*/_react.default.createElement("div", {
-      style: {
-        display: 'flex',
-        gap: '10px'
-      }
-    }, /*#__PURE__*/_react.default.createElement("button", {
-      className: "log-bet-button",
-      onClick: function onClick() {
-        // Navigate to BetLogger component
-        if (navigateToBetLogger) {
-          navigateToBetLogger();
-        } else {
-          window.location.href = '/betlogger';
-        }
-      },
-      style: {
-        background: 'linear-gradient(135deg, #1976d2 0%, #2196f3 100%)',
-        color: 'white',
-        border: 'none',
-        borderRadius: '6px',
-        padding: '8px 16px',
-        cursor: 'pointer',
-        fontWeight: 'bold',
-        fontSize: '0.85rem',
-        whiteSpace: 'nowrap'
-      }
-    }, "Log Bets"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "clear-data-button",
-      onClick: function onClick() {
-        if (window.confirm('Are you sure you want to clear all data? This will remove the demo data and any existing bet history so you can start fresh.')) {
-          // Clear localStorage
-          localStorage.removeItem('bets');
-
-          // Reset state to empty
-          setBettingData({
-            recentBets: [],
-            profitTrend: [{
-              date: new Date().toISOString().split('T')[0],
-              profit: 0
-            }],
-            sportBreakdown: [],
-            betTypeBreakdown: [],
-            isDemo: false
-          });
-          setMetrics({
-            totalBets: 0,
-            winRate: '0%',
-            wins: 0,
-            losses: 0,
-            pushes: 0,
-            profitLoss: '$0.00',
-            roi: '0%',
-            avgOdds: 'N/A',
-            avgStake: '$0.00',
-            bestSport: 'None',
-            bestBetType: 'None',
-            streak: 'N/A',
-            bestLeague: 'None'
-          });
-        }
-      },
-      style: {
-        background: 'rgba(220, 53, 69, 0.1)',
-        color: '#ff6b6b',
-        border: '1px solid rgba(220, 53, 69, 0.3)',
-        borderRadius: '6px',
-        padding: '8px 16px',
-        cursor: 'pointer',
-        fontSize: '0.85rem',
-        whiteSpace: 'nowrap'
-      }
-    }, "Remove Demo"))), !isDemo && isPendingResult && /*#__PURE__*/_react.default.createElement("div", {
-      className: "info-banner",
-      style: {
-        background: 'rgba(25, 118, 210, 0.1)',
-        border: '1px solid rgba(25, 118, 210, 0.3)',
-        borderRadius: '8px',
-        padding: '12px 16px',
-        marginBottom: '20px',
-        color: '#e0e0e0',
-        fontSize: '0.95rem'
-      }
-    }, /*#__PURE__*/_react.default.createElement("p", {
-      style: {
-        margin: 0
-      }
-    }, /*#__PURE__*/_react.default.createElement("strong", null, "Your logged bets:"), " You've started logging your bets! To track results, you'll need to update each bet with its outcome in the Pro version. For now, we're showing your logged bets with pending results.")), /*#__PURE__*/_react.default.createElement("table", {
-      className: "bets-table"
-    }, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("th", null, "Date"), /*#__PURE__*/_react.default.createElement("th", null, "Match"), /*#__PURE__*/_react.default.createElement("th", null, "Bet Type"), /*#__PURE__*/_react.default.createElement("th", null, "Odds"), /*#__PURE__*/_react.default.createElement("th", null, "Stake"), /*#__PURE__*/_react.default.createElement("th", null, "Result"), /*#__PURE__*/_react.default.createElement("th", null, "Profit/Loss"))), /*#__PURE__*/_react.default.createElement("tbody", null, bettingData.recentBets.map(function (bet) {
-      return /*#__PURE__*/_react.default.createElement("tr", {
-        key: bet.id,
-        className: "bet-row ".concat(bet.result === 'win' ? 'win' : bet.result === 'loss' ? 'loss' : 'pending', " ").concat(!bet.isUserData ? 'demo-data' : '')
-      }, /*#__PURE__*/_react.default.createElement("td", null, bet.date), /*#__PURE__*/_react.default.createElement("td", null, bet.team, " vs ", bet.opponent), /*#__PURE__*/_react.default.createElement("td", null, bet.type), /*#__PURE__*/_react.default.createElement("td", null, bet.odds), /*#__PURE__*/_react.default.createElement("td", null, bet.stake), /*#__PURE__*/_react.default.createElement("td", {
-        className: "result ".concat(bet.result)
-      }, !bet.isUserData && /*#__PURE__*/_react.default.createElement("span", {
-        className: "demo-badge",
+    return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "recent-bets",
+      children: [isDemo && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "demo-data-banner",
         style: {
-          fontSize: '0.7rem',
-          background: 'rgba(255, 87, 51, 0.2)',
-          padding: '2px 4px',
-          borderRadius: '4px',
-          marginRight: '5px'
-        }
-      }, "DEMO"), bet.result === 'pending' ? 'PENDING' : bet.result.toUpperCase()), /*#__PURE__*/_react.default.createElement("td", {
-        className: bet.profit === 'Pending' ? 'pending' : bet.profit.startsWith('+') ? 'profit' : 'loss'
-      }, bet.profit));
-    }))));
+          background: 'rgba(255, 87, 51, 0.1)',
+          border: '1px solid rgba(255, 87, 51, 0.3)',
+          borderRadius: '8px',
+          padding: '12px 16px',
+          marginBottom: '20px',
+          color: '#ff5733',
+          fontSize: '0.95rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between'
+        },
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+            style: {
+              margin: 0,
+              fontWeight: 'bold'
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+              style: {
+                marginRight: '8px'
+              },
+              children: "\u26A0\uFE0F"
+            }), "You're viewing DEMO DATA"]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            style: {
+              margin: '5px 0 0 0',
+              fontSize: '0.85rem',
+              color: '#e0e0e0'
+            },
+            children: "These are sample bets to demonstrate the dashboard. Log your own bets to replace this demo data!"
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          style: {
+            display: 'flex',
+            gap: '10px'
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+            className: "log-bet-button",
+            onClick: function onClick() {
+              // Navigate to BetLogger component
+              if (navigateToBetLogger) {
+                navigateToBetLogger();
+              } else {
+                window.location.href = '/betlogger';
+              }
+            },
+            style: {
+              background: 'linear-gradient(135deg, #1976d2 0%, #2196f3 100%)',
+              color: 'white',
+              border: 'none',
+              borderRadius: '6px',
+              padding: '8px 16px',
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              fontSize: '0.85rem',
+              whiteSpace: 'nowrap'
+            },
+            children: "Log Bets"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+            className: "clear-data-button",
+            onClick: function onClick() {
+              if (window.confirm('Are you sure you want to clear all data? This will remove the demo data and any existing bet history so you can start fresh.')) {
+                // Clear localStorage
+                localStorage.removeItem('bets');
+
+                // Reset state to empty
+                setBettingData({
+                  recentBets: [],
+                  profitTrend: [{
+                    date: new Date().toISOString().split('T')[0],
+                    profit: 0
+                  }],
+                  sportBreakdown: [],
+                  betTypeBreakdown: [],
+                  isDemo: false
+                });
+                setMetrics({
+                  totalBets: 0,
+                  winRate: '0%',
+                  wins: 0,
+                  losses: 0,
+                  pushes: 0,
+                  profitLoss: '$0.00',
+                  roi: '0%',
+                  avgOdds: 'N/A',
+                  avgStake: '$0.00',
+                  bestSport: 'None',
+                  bestBetType: 'None',
+                  streak: 'N/A',
+                  bestLeague: 'None'
+                });
+              }
+            },
+            style: {
+              background: 'rgba(220, 53, 69, 0.1)',
+              color: '#ff6b6b',
+              border: '1px solid rgba(220, 53, 69, 0.3)',
+              borderRadius: '6px',
+              padding: '8px 16px',
+              cursor: 'pointer',
+              fontSize: '0.85rem',
+              whiteSpace: 'nowrap'
+            },
+            children: "Remove Demo"
+          })]
+        })]
+      }), !isDemo && isPendingResult && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "info-banner",
+        style: {
+          background: 'rgba(25, 118, 210, 0.1)',
+          border: '1px solid rgba(25, 118, 210, 0.3)',
+          borderRadius: '8px',
+          padding: '12px 16px',
+          marginBottom: '20px',
+          color: '#e0e0e0',
+          fontSize: '0.95rem'
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+          style: {
+            margin: 0
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+            children: "Your logged bets:"
+          }), " You've started logging your bets! To track results, you'll need to update each bet with its outcome in the Pro version. For now, we're showing your logged bets with pending results."]
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("table", {
+        className: "bets-table",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("thead", {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("tr", {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Date"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Match"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Bet Type"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Odds"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Stake"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Result"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("th", {
+              children: "Profit/Loss"
+            })]
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("tbody", {
+          children: bettingData.recentBets.map(function (bet) {
+            return /*#__PURE__*/(0, _jsxRuntime.jsxs)("tr", {
+              className: "bet-row ".concat(bet.result === 'win' ? 'win' : bet.result === 'loss' ? 'loss' : 'pending', " ").concat(!bet.isUserData ? 'demo-data' : ''),
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("td", {
+                children: bet.date
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("td", {
+                children: [bet.team, " vs ", bet.opponent]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("td", {
+                children: bet.type
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("td", {
+                children: bet.odds
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("td", {
+                children: bet.stake
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("td", {
+                className: "result ".concat(bet.result),
+                children: [!bet.isUserData && /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "demo-badge",
+                  style: {
+                    fontSize: '0.7rem',
+                    background: 'rgba(255, 87, 51, 0.2)',
+                    padding: '2px 4px',
+                    borderRadius: '4px',
+                    marginRight: '5px'
+                  },
+                  children: "DEMO"
+                }), bet.result === 'pending' ? 'PENDING' : bet.result.toUpperCase()]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("td", {
+                className: bet.profit === 'Pending' ? 'pending' : bet.profit.startsWith('+') ? 'profit' : 'loss',
+                children: bet.profit
+              })]
+            }, bet.id);
+          })
+        })]
+      })]
+    });
   };
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "dashboard-page"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "dashboard-glow-effect"
-  }), showAnnouncement && /*#__PURE__*/_react.default.createElement("div", {
-    className: "announcement-banner",
-    style: {
-      position: 'relative',
-      // Change from fixed position to relative
-      zIndex: 1,
-      // Lower z-index
-      marginBottom: '15px',
-      // Add margin below
-      backgroundColor: 'rgba(10, 10, 15, 0.7)',
-      backdropFilter: 'blur(10px)',
-      border: '1px solid rgba(255, 255, 255, 0.1)',
-      borderRadius: '8px',
-      padding: '10px 15px',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-      fontWeight: 'normal',
-      fontSize: '0.9rem',
-      lineHeight: '1.4'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "announcement-content",
-    style: {
-      display: 'flex',
-      alignItems: 'flex-start',
-      gap: '12px'
-    }
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    role: "img",
-    "aria-label": "rocket",
-    className: "announcement-icon",
-    style: {
-      fontSize: '1.5rem',
-      marginTop: '2px'
-    }
-  }, "\uD83D\uDE80"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "announcement-text",
-    style: {
-      flex: 1,
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '8px'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", null, "BetAnalytix Pro Coming Soon:"), /*#__PURE__*/_react.default.createElement("span", null, " We're working on importing data directly from betting apps with real-time sports information updates.")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("strong", {
-    style: {
-      color: '#ff5733'
-    }
-  }, "\u26A0\uFE0F Important:"), /*#__PURE__*/_react.default.createElement("span", null, " Clear the demo data from both Recent Bets section and the main dashboard before logging your own bets. Use the \"Remove Demo\" button in each section.")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "announcement-contact",
-    style: {
-      fontSize: '0.85rem',
-      opacity: 0.9
-    }
-  }, "Questions or feedback? Email ", /*#__PURE__*/_react.default.createElement("a", {
-    href: "mailto:lkamanboina@gmail.com"
-  }, "lkamanboina@gmail.com"))), /*#__PURE__*/_react.default.createElement("button", {
-    className: "announcement-close",
-    onClick: function onClick() {
-      return setShowAnnouncement(false);
-    },
-    "aria-label": "Close announcement",
-    style: {
-      background: 'transparent',
-      border: 'none',
-      color: '#e0e0e0',
-      fontSize: '1.5rem',
-      cursor: 'pointer',
-      padding: '0',
-      marginTop: '-5px',
-      marginRight: '-5px',
-      opacity: 0.7,
-      transition: 'opacity 0.2s'
-    },
-    onMouseOver: function onMouseOver(e) {
-      return e.currentTarget.style.opacity = '1';
-    },
-    onMouseOut: function onMouseOut(e) {
-      return e.currentTarget.style.opacity = '0.7';
-    }
-  }, "\xD7"))), /*#__PURE__*/_react.default.createElement("header", {
-    className: "dashboard-header"
-  }, /*#__PURE__*/_react.default.createElement("h1", {
-    className: "dashboard-title"
-  }, "Your Betting Dashboard"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "dashboard-controls"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "control-item"
-  }, /*#__PURE__*/_react.default.createElement("select", {
-    className: "select-control",
-    value: timeRange,
-    onChange: function onChange(e) {
-      return setTimeRange(e.target.value);
-    }
-  }, /*#__PURE__*/_react.default.createElement("option", {
-    value: "7D"
-  }, "Last 7 Days"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "30D"
-  }, "Last 30 Days"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "90D"
-  }, "Last 90 Days"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "YTD"
-  }, "Year to Date"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "ALL"
-  }, "All Time"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "control-item"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "refresh-button"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "refresh-icon"
-  }, "\u21BB"), " Refresh"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "dashboard-actions",
-    style: {
-      display: 'flex',
-      justifyContent: 'flex-end',
-      marginBottom: '15px',
-      paddingRight: '10px'
-    }
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "clear-data-button",
-    onClick: function onClick() {
-      if (window.confirm('Are you sure you want to clear all data? This will remove all bets from your history and reset the dashboard to an empty state.')) {
-        // Clear localStorage
-        localStorage.removeItem('bets');
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "dashboard-page",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      className: "dashboard-glow-effect"
+    }), showAnnouncement && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      className: "announcement-banner",
+      style: {
+        position: 'relative',
+        // Change from fixed position to relative
+        zIndex: 1,
+        // Lower z-index
+        marginBottom: '15px',
+        // Add margin below
+        backgroundColor: 'rgba(10, 10, 15, 0.7)',
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        borderRadius: '8px',
+        padding: '10px 15px',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+        fontWeight: 'normal',
+        fontSize: '0.9rem',
+        lineHeight: '1.4'
+      },
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "announcement-content",
+        style: {
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '12px'
+        },
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          role: "img",
+          "aria-label": "rocket",
+          className: "announcement-icon",
+          style: {
+            fontSize: '1.5rem',
+            marginTop: '2px'
+          },
+          children: "\uD83D\uDE80"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "announcement-text",
+          style: {
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px'
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+              children: "BetAnalytix Pro Coming Soon:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+              children: " We're working on importing data directly from betting apps with real-time sports information updates."
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+              style: {
+                color: '#ff5733'
+              },
+              children: "\u26A0\uFE0F Important:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+              children: " Clear the demo data from both Recent Bets section and the main dashboard before logging your own bets. Use the \"Remove Demo\" button in each section."
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "announcement-contact",
+            style: {
+              fontSize: '0.85rem',
+              opacity: 0.9
+            },
+            children: ["Questions or feedback? Email ", /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+              href: "mailto:lkamanboina@gmail.com",
+              children: "lkamanboina@gmail.com"
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: "announcement-close",
+          onClick: function onClick() {
+            return setShowAnnouncement(false);
+          },
+          "aria-label": "Close announcement",
+          style: {
+            background: 'transparent',
+            border: 'none',
+            color: '#e0e0e0',
+            fontSize: '1.5rem',
+            cursor: 'pointer',
+            padding: '0',
+            marginTop: '-5px',
+            marginRight: '-5px',
+            opacity: 0.7,
+            transition: 'opacity 0.2s'
+          },
+          onMouseOver: function onMouseOver(e) {
+            return e.currentTarget.style.opacity = '1';
+          },
+          onMouseOut: function onMouseOut(e) {
+            return e.currentTarget.style.opacity = '0.7';
+          },
+          children: "\xD7"
+        })]
+      })
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("header", {
+      className: "dashboard-header",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
+        className: "dashboard-title",
+        children: "Your Betting Dashboard"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "dashboard-controls",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          className: "control-item",
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("select", {
+            className: "select-control",
+            value: timeRange,
+            onChange: function onChange(e) {
+              return setTimeRange(e.target.value);
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+              value: "7D",
+              children: "Last 7 Days"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+              value: "30D",
+              children: "Last 30 Days"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+              value: "90D",
+              children: "Last 90 Days"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+              value: "YTD",
+              children: "Year to Date"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+              value: "ALL",
+              children: "All Time"
+            })]
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          className: "control-item",
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+            className: "refresh-button",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+              className: "refresh-icon",
+              children: "\u21BB"
+            }), " Refresh"]
+          })
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "dashboard-actions",
+        style: {
+          display: 'flex',
+          justifyContent: 'flex-end',
+          marginBottom: '15px',
+          paddingRight: '10px'
+        },
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+          className: "clear-data-button",
+          onClick: function onClick() {
+            if (window.confirm('Are you sure you want to clear all data? This will remove all bets from your history and reset the dashboard to an empty state.')) {
+              // Clear localStorage
+              localStorage.removeItem('bets');
 
-        // Reset state
-        setBettingData({
-          recentBets: [],
-          profitTrend: [{
-            date: new Date().toISOString().split('T')[0],
-            profit: 0
-          }],
-          sportBreakdown: [],
-          betTypeBreakdown: []
-        });
-        setMetrics({
-          totalBets: 0,
-          winRate: '0%',
-          wins: 0,
-          losses: 0,
-          pushes: 0,
-          profitLoss: '$0.00',
-          roi: '0%',
-          avgOdds: 'N/A',
-          avgStake: '$0.00',
-          bestSport: 'None',
-          bestBetType: 'None',
-          streak: 'N/A',
-          bestLeague: 'None'
-        });
+              // Reset state
+              setBettingData({
+                recentBets: [],
+                profitTrend: [{
+                  date: new Date().toISOString().split('T')[0],
+                  profit: 0
+                }],
+                sportBreakdown: [],
+                betTypeBreakdown: []
+              });
+              setMetrics({
+                totalBets: 0,
+                winRate: '0%',
+                wins: 0,
+                losses: 0,
+                pushes: 0,
+                profitLoss: '$0.00',
+                roi: '0%',
+                avgOdds: 'N/A',
+                avgStake: '$0.00',
+                bestSport: 'None',
+                bestBetType: 'None',
+                streak: 'N/A',
+                bestLeague: 'None'
+              });
 
-        // Show success message
-        alert('All data has been cleared. Your bet history has been removed and you can now start fresh with your own bets!');
-      }
-    },
-    style: {
-      background: 'rgba(220, 53, 69, 0.1)',
-      color: '#ff6b6b',
-      border: '1px solid rgba(220, 53, 69, 0.3)',
-      borderRadius: '6px',
-      padding: '6px 14px',
-      cursor: 'pointer',
-      fontSize: '0.875rem'
-    }
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    style: {
-      marginRight: '5px'
-    }
-  }, "\uD83D\uDDD1\uFE0F"), " Clear All Data"))), isLoading && /*#__PURE__*/_react.default.createElement("div", {
-    className: "loading-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "loading-spinner"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Loading your betting analytics...")), error && /*#__PURE__*/_react.default.createElement("div", {
-    className: "error-message"
-  }, /*#__PURE__*/_react.default.createElement("p", null, error), /*#__PURE__*/_react.default.createElement("button", {
-    className: "retry-button",
-    onClick: function onClick() {
-      return window.location.reload();
-    }
-  }, "Try Again")), !isLoading && !error && /*#__PURE__*/_react.default.createElement("div", {
-    className: "dashboard-content"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "dashboard-tabs"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "tab-button ".concat(activeTab === 'overview' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('overview');
-    }
-  }, "Overview"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "tab-button ".concat(activeTab === 'performance' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('performance');
-    }
-  }, "Performance Analysis"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "tab-button ".concat(activeTab === 'bets' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('bets');
-    }
-  }, "Recent Bets")), activeTab === 'overview' && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("section", {
-    className: "performance-summary"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-header"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Betting Performance Summary")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-content"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-stat profit-stat"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-label"
-  }, "Total Profit/Loss"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-value"
-  }, metrics.profitLoss)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-stat roi-stat"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-label"
-  }, "Return on Investment"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-value"
-  }, metrics.roi)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-stat"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-label"
-  }, "Total Bets"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-value"
-  }, metrics.totalBets))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-stat win-stat"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-label"
-  }, "Win Rate"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-value"
-  }, metrics.winRate)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-stat"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-label"
-  }, "Wins / Losses"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-value"
-  }, metrics.wins, " / ", metrics.losses)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "summary-stat"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-label"
-  }, "Avg. Stake"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat-value"
-  }, metrics.avgStake))))), /*#__PURE__*/_react.default.createElement("section", {
-    className: "main-chart-section"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "section-header"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Profit/Loss Trend"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "time-range-selector"
-  }, ['7D', '30D', '90D', 'YTD', 'ALL'].map(function (range) {
-    return /*#__PURE__*/_react.default.createElement("button", {
-      key: range,
-      className: "range-button ".concat(timeRange === range ? 'active' : ''),
-      onClick: function onClick() {
-        return setTimeRange(range);
-      }
-    }, range);
-  }))), renderChart('Profit/Loss Trend')), /*#__PURE__*/_react.default.createElement("section", {
-    className: "secondary-charts"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "chart-grid"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "chart-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Win Rate by Sport"), renderChart('Win Rate by Sport')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "chart-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Profit by Bet Type"), renderChart('Profit by Bet Type')))), /*#__PURE__*/_react.default.createElement("section", {
-    className: "recent-performance"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Recent Performance"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "performance-metrics"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "performance-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Last 7 Days"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "performance-stats"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-label"
-  }, "Bets"), /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-value"
-  }, "14")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-label"
-  }, "Win Rate"), /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-value"
-  }, "71.4%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-label"
-  }, "Profit"), /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-value profit"
-  }, "+$312.75")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "performance-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Last 30 Days"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "performance-stats"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-label"
-  }, "Bets"), /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-value"
-  }, "42")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-label"
-  }, "Win Rate"), /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-value"
-  }, "64.3%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "stat"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-label"
-  }, "Profit"), /*#__PURE__*/_react.default.createElement("span", {
-    className: "stat-value profit"
-  }, "+$843.50"))))))), activeTab === 'performance' && /*#__PURE__*/_react.default.createElement("section", {
-    className: "performance-analysis"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "analysis-grid"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "analysis-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Sports Breakdown"), renderChart('Sports Breakdown')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "analysis-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Bet Type Analysis"), renderChart('Bet Type Analysis')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "analysis-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Stake vs. ROI"), renderChart('Stake vs. ROI')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "analysis-card"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Time of Day Performance"), renderChart('Time of Day Performance')))), activeTab === 'bets' && /*#__PURE__*/_react.default.createElement("section", {
-    className: "recent-bets-section"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "section-header"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Recent Bets"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "log-bet-button",
-    onClick: function onClick() {
-      // Navigate to BetLogger component
-      if (navigateToBetLogger) {
-        // Use provided navigation function if available
-        navigateToBetLogger();
-      } else {
-        // Try to navigate via window.location as fallback
-        window.location.href = '/betlogger';
-      }
-    }
-  }, "+ Log New Bet")), renderRecentBets())));
+              // Show success message
+              alert('All data has been cleared. Your bet history has been removed and you can now start fresh with your own bets!');
+            }
+          },
+          style: {
+            background: 'rgba(220, 53, 69, 0.1)',
+            color: '#ff6b6b',
+            border: '1px solid rgba(220, 53, 69, 0.3)',
+            borderRadius: '6px',
+            padding: '6px 14px',
+            cursor: 'pointer',
+            fontSize: '0.875rem'
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+            style: {
+              marginRight: '5px'
+            },
+            children: "\uD83D\uDDD1\uFE0F"
+          }), " Clear All Data"]
+        })
+      })]
+    }), isLoading && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "loading-container",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "loading-spinner"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+        children: "Loading your betting analytics..."
+      })]
+    }), error && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "error-message",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+        children: error
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        className: "retry-button",
+        onClick: function onClick() {
+          return window.location.reload();
+        },
+        children: "Try Again"
+      })]
+    }), !isLoading && !error && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "dashboard-content",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "dashboard-tabs",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: "tab-button ".concat(activeTab === 'overview' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('overview');
+          },
+          children: "Overview"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: "tab-button ".concat(activeTab === 'performance' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('performance');
+          },
+          children: "Performance Analysis"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+          className: "tab-button ".concat(activeTab === 'bets' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('bets');
+          },
+          children: "Recent Bets"
+        })]
+      }), activeTab === 'overview' && /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("section", {
+          className: "performance-summary",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "summary-header",
+            children: /*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+              children: "Betting Performance Summary"
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "summary-content",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "summary-row",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "summary-stat profit-stat",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-label",
+                  children: "Total Profit/Loss"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-value",
+                  children: metrics.profitLoss
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "summary-stat roi-stat",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-label",
+                  children: "Return on Investment"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-value",
+                  children: metrics.roi
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "summary-stat",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-label",
+                  children: "Total Bets"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-value",
+                  children: metrics.totalBets
+                })]
+              })]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "summary-row",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "summary-stat win-stat",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-label",
+                  children: "Win Rate"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-value",
+                  children: metrics.winRate
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "summary-stat",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-label",
+                  children: "Wins / Losses"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat-value",
+                  children: [metrics.wins, " / ", metrics.losses]
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "summary-stat",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-label",
+                  children: "Avg. Stake"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                  className: "stat-value",
+                  children: metrics.avgStake
+                })]
+              })]
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("section", {
+          className: "main-chart-section",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "section-header",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+              children: "Profit/Loss Trend"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "time-range-selector",
+              children: ['7D', '30D', '90D', 'YTD', 'ALL'].map(function (range) {
+                return /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+                  className: "range-button ".concat(timeRange === range ? 'active' : ''),
+                  onClick: function onClick() {
+                    return setTimeRange(range);
+                  },
+                  children: range
+                }, range);
+              })
+            })]
+          }), renderChart('Profit/Loss Trend')]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("section", {
+          className: "secondary-charts",
+          children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "chart-grid",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "chart-card",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+                children: "Win Rate by Sport"
+              }), renderChart('Win Rate by Sport')]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "chart-card",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+                children: "Profit by Bet Type"
+              }), renderChart('Profit by Bet Type')]
+            })]
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("section", {
+          className: "recent-performance",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+            children: "Recent Performance"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "performance-metrics",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "performance-card",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+                children: "Last 7 Days"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "performance-stats",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-label",
+                    children: "Bets"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-value",
+                    children: "14"
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-label",
+                    children: "Win Rate"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-value",
+                    children: "71.4%"
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-label",
+                    children: "Profit"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-value profit",
+                    children: "+$312.75"
+                  })]
+                })]
+              })]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "performance-card",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+                children: "Last 30 Days"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "performance-stats",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-label",
+                    children: "Bets"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-value",
+                    children: "42"
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-label",
+                    children: "Win Rate"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-value",
+                    children: "64.3%"
+                  })]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "stat",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-label",
+                    children: "Profit"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    className: "stat-value profit",
+                    children: "+$843.50"
+                  })]
+                })]
+              })]
+            })]
+          })]
+        })]
+      }), activeTab === 'performance' && /*#__PURE__*/(0, _jsxRuntime.jsx)("section", {
+        className: "performance-analysis",
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "analysis-grid",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "analysis-card",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+              children: "Sports Breakdown"
+            }), renderChart('Sports Breakdown')]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "analysis-card",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+              children: "Bet Type Analysis"
+            }), renderChart('Bet Type Analysis')]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "analysis-card",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+              children: "Stake vs. ROI"
+            }), renderChart('Stake vs. ROI')]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "analysis-card",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+              children: "Time of Day Performance"
+            }), renderChart('Time of Day Performance')]
+          })]
+        })
+      }), activeTab === 'bets' && /*#__PURE__*/(0, _jsxRuntime.jsxs)("section", {
+        className: "recent-bets-section",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "section-header",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+            children: "Recent Bets"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+            className: "log-bet-button",
+            onClick: function onClick() {
+              // Navigate to BetLogger component
+              if (navigateToBetLogger) {
+                // Use provided navigation function if available
+                navigateToBetLogger();
+              } else {
+                // Try to navigate via window.location as fallback
+                window.location.href = '/betlogger';
+              }
+            },
+            children: "+ Log New Bet"
+          })]
+        }), renderRecentBets()]
+      })]
+    })]
+  });
 }
 
 // Simplified metric card component - removed since we're not using it anymore
@@ -53586,7 +53854,7 @@ function Dashboard(_ref) {
 //   );
 // }
 var _default = exports.default = Dashboard;
-},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/asyncToGenerator":"agGE","@babel/runtime/helpers/slicedToArray":"HETk","@babel/runtime/regenerator":"PMvg","react":"n8MK","recharts":"ZrE6"}],"KTYD":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/asyncToGenerator":"agGE","@babel/runtime/helpers/slicedToArray":"HETk","@babel/runtime/regenerator":"PMvg","react":"n8MK","recharts":"ZrE6","react/jsx-runtime":"plwR"}],"KTYD":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53594,120 +53862,144 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 // Ultra-simplified dashboard that should render in any scenario
 function SimpleRecoveryDashboard() {
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     style: {
       backgroundColor: '#0a0a0a',
       color: '#ffffff',
       padding: '20px',
       minHeight: '100vh',
       fontFamily: 'Arial, sans-serif'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      zIndex: 100,
-      backgroundColor: '#141414',
-      padding: '15px 20px',
-      boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
-      borderBottom: '1px solid #333',
-      textAlign: 'center'
-    }
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    style: {
-      color: '#ff4500',
-      marginRight: '10px'
-    }
-  }, "\uD83D\uDE80"), /*#__PURE__*/_react.default.createElement("strong", {
-    style: {
-      color: '#ff7e00',
-      marginRight: '5px'
-    }
-  }, "Coming Soon:"), "Enhanced betting analytics with AI predictions"), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      paddingTop: '80px',
-      maxWidth: '1200px',
-      margin: '0 auto'
-    }
-  }, /*#__PURE__*/_react.default.createElement("h1", {
-    style: {
-      color: '#ff7e00',
-      marginBottom: '30px',
-      fontSize: '28px'
-    }
-  }, "Emergency Dashboard Recovery"), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      backgroundColor: '#1a1a1a',
-      padding: '20px',
-      borderRadius: '8px',
-      marginBottom: '20px',
-      border: '1px solid #333'
-    }
-  }, /*#__PURE__*/_react.default.createElement("h2", {
-    style: {
-      color: '#ff7e00',
-      marginTop: 0,
-      marginBottom: '15px'
-    }
-  }, "Dashboard Recovery Mode"), /*#__PURE__*/_react.default.createElement("p", {
-    style: {
-      marginBottom: '15px'
-    }
-  }, "Your dashboard is now in recovery mode. This simplified version should display correctly."), /*#__PURE__*/_react.default.createElement("p", null, "To restore your full dashboard functionality:"), /*#__PURE__*/_react.default.createElement("ol", {
-    style: {
-      paddingLeft: '25px',
-      lineHeight: '1.6'
-    }
-  }, /*#__PURE__*/_react.default.createElement("li", null, "Check browser console for errors"), /*#__PURE__*/_react.default.createElement("li", null, "Verify all JS files are loading correctly"), /*#__PURE__*/_react.default.createElement("li", null, "Make sure API endpoints are accessible"), /*#__PURE__*/_react.default.createElement("li", null, "Check CSS for any overrides that might hide content"))), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-      gap: '20px',
-      marginBottom: '30px'
-    }
-  }, [{
-    title: 'Total Bets',
-    value: '245'
-  }, {
-    title: 'Win Rate',
-    value: '62.4%'
-  }, {
-    title: 'Wins',
-    value: '153'
-  }, {
-    title: 'Losses',
-    value: '92'
-  }].map(function (metric, index) {
-    return /*#__PURE__*/_react.default.createElement("div", {
-      key: index,
+    },
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       style: {
-        backgroundColor: '#1a1a1a',
-        padding: '20px',
-        borderRadius: '8px',
-        textAlign: 'center',
-        border: '1px solid #333'
-      }
-    }, /*#__PURE__*/_react.default.createElement("div", {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 100,
+        backgroundColor: '#141414',
+        padding: '15px 20px',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.3)',
+        borderBottom: '1px solid #333',
+        textAlign: 'center'
+      },
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+        style: {
+          color: '#ff4500',
+          marginRight: '10px'
+        },
+        children: "\uD83D\uDE80"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+        style: {
+          color: '#ff7e00',
+          marginRight: '5px'
+        },
+        children: "Coming Soon:"
+      }), "Enhanced betting analytics with AI predictions"]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
       style: {
-        color: '#b0b0b0',
-        marginBottom: '10px'
-      }
-    }, metric.title), /*#__PURE__*/_react.default.createElement("div", {
-      style: {
-        color: '#ff7e00',
-        fontSize: '24px',
-        fontWeight: 'bold'
-      }
-    }, metric.value));
-  }))));
+        paddingTop: '80px',
+        maxWidth: '1200px',
+        margin: '0 auto'
+      },
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
+        style: {
+          color: '#ff7e00',
+          marginBottom: '30px',
+          fontSize: '28px'
+        },
+        children: "Emergency Dashboard Recovery"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        style: {
+          backgroundColor: '#1a1a1a',
+          padding: '20px',
+          borderRadius: '8px',
+          marginBottom: '20px',
+          border: '1px solid #333'
+        },
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+          style: {
+            color: '#ff7e00',
+            marginTop: 0,
+            marginBottom: '15px'
+          },
+          children: "Dashboard Recovery Mode"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          style: {
+            marginBottom: '15px'
+          },
+          children: "Your dashboard is now in recovery mode. This simplified version should display correctly."
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          children: "To restore your full dashboard functionality:"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("ol", {
+          style: {
+            paddingLeft: '25px',
+            lineHeight: '1.6'
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            children: "Check browser console for errors"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            children: "Verify all JS files are loading correctly"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            children: "Make sure API endpoints are accessible"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            children: "Check CSS for any overrides that might hide content"
+          })]
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        style: {
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          gap: '20px',
+          marginBottom: '30px'
+        },
+        children: [{
+          title: 'Total Bets',
+          value: '245'
+        }, {
+          title: 'Win Rate',
+          value: '62.4%'
+        }, {
+          title: 'Wins',
+          value: '153'
+        }, {
+          title: 'Losses',
+          value: '92'
+        }].map(function (metric, index) {
+          return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            style: {
+              backgroundColor: '#1a1a1a',
+              padding: '20px',
+              borderRadius: '8px',
+              textAlign: 'center',
+              border: '1px solid #333'
+            },
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              style: {
+                color: '#b0b0b0',
+                marginBottom: '10px'
+              },
+              children: metric.title
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              style: {
+                color: '#ff7e00',
+                fontSize: '24px',
+                fontWeight: 'bold'
+              },
+              children: metric.value
+            })]
+          }, index);
+        })
+      })]
+    })]
+  });
 }
 var _default = exports.default = SimpleRecoveryDashboard;
-},{"react":"n8MK"}],"RzfG":[function(require,module,exports) {
+},{"react":"n8MK","react/jsx-runtime":"plwR"}],"RzfG":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53716,6 +54008,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
 var _react = _interopRequireWildcard(require("react"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
@@ -53755,70 +54048,95 @@ var Header = function Header(_ref) {
     nav(page);
     setMobileMenuOpen(false);
   };
-  return /*#__PURE__*/_react.default.createElement("header", {
-    className: "header ".concat(isScrolled ? 'scrolled' : '')
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "container flex space-between align-center"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "logo"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "BetAnalytix"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "tagline"
-  }, "Transform Raw Bets into Winning Strategies")), /*#__PURE__*/_react.default.createElement("button", {
-    className: "mobile-menu-toggle ".concat(mobileMenuOpen ? 'active' : ''),
-    onClick: function onClick() {
-      return setMobileMenuOpen(!mobileMenuOpen);
-    },
-    "aria-label": "Toggle navigation menu"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    className: "bar"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    className: "bar"
-  }), /*#__PURE__*/_react.default.createElement("span", {
-    className: "bar"
-  })), /*#__PURE__*/_react.default.createElement("nav", {
-    className: "main-nav ".concat(mobileMenuOpen ? 'open' : '')
-  }, /*#__PURE__*/_react.default.createElement("ul", {
-    className: "nav-list flex"
-  }, /*#__PURE__*/_react.default.createElement("li", {
-    className: "nav-item ".concat(active === 'dashboard' ? 'active' : '')
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick() {
-      return handleNavigation('dashboard');
-    },
-    className: "nav-link"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-chart-line"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Dashboard"))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "nav-item ".concat(active === 'logger' ? 'active' : '')
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick() {
-      return handleNavigation('logger');
-    },
-    className: "nav-link"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-book"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Bet Logger"))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "nav-item ".concat(active === 'assistant' ? 'active' : '')
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick() {
-      return handleNavigation('assistant');
-    },
-    className: "nav-link"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-robot"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "AI Assistant"))), /*#__PURE__*/_react.default.createElement("li", {
-    className: "nav-item ".concat(active === 'tools' ? 'active' : '')
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    onClick: function onClick() {
-      return handleNavigation('tools');
-    },
-    className: "nav-link"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-calculator"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Tools")))))));
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("header", {
+    className: "header ".concat(isScrolled ? 'scrolled' : ''),
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "container flex space-between align-center",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "logo",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h1", {
+          children: "BetAnalytix"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          className: "tagline",
+          children: "Transform Raw Bets into Winning Strategies"
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+        className: "mobile-menu-toggle ".concat(mobileMenuOpen ? 'active' : ''),
+        onClick: function onClick() {
+          return setMobileMenuOpen(!mobileMenuOpen);
+        },
+        "aria-label": "Toggle navigation menu",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          className: "bar"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          className: "bar"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          className: "bar"
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("nav", {
+        className: "main-nav ".concat(mobileMenuOpen ? 'open' : ''),
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("ul", {
+          className: "nav-list flex",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            className: "nav-item ".concat(active === 'dashboard' ? 'active' : ''),
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+              onClick: function onClick() {
+                return handleNavigation('dashboard');
+              },
+              className: "nav-link",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                className: "fas fa-chart-line"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                children: "Dashboard"
+              })]
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            className: "nav-item ".concat(active === 'logger' ? 'active' : ''),
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+              onClick: function onClick() {
+                return handleNavigation('logger');
+              },
+              className: "nav-link",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                className: "fas fa-book"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                children: "Bet Logger"
+              })]
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            className: "nav-item ".concat(active === 'assistant' ? 'active' : ''),
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+              onClick: function onClick() {
+                return handleNavigation('assistant');
+              },
+              className: "nav-link",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                className: "fas fa-robot"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                children: "AI Assistant"
+              })]
+            })
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+            className: "nav-item ".concat(active === 'tools' ? 'active' : ''),
+            children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+              onClick: function onClick() {
+                return handleNavigation('tools');
+              },
+              className: "nav-link",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                className: "fas fa-calculator"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                children: "Tools"
+              })]
+            })
+          })]
+        })
+      })]
+    })
+  });
 };
 var _default = exports.default = Header;
-},{"@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK"}],"fZmu":[function(require,module,exports) {
+},{"@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK","react/jsx-runtime":"plwR"}],"fZmu":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53826,33 +54144,45 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var Footer = function Footer() {
   var currentYear = new Date().getFullYear();
-  return /*#__PURE__*/_react.default.createElement("footer", {
-    className: "app-footer"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-content"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-logo"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "BetAnalytix"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "text-secondary"
-  }, "Smart Betting Analytics")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "footer-legal"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "disclaimer"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-exclamation-triangle"
-  }), " Gambling involves risk. Please gamble responsibly."), /*#__PURE__*/_react.default.createElement("p", {
-    className: "copyright"
-  }, "\xA9 ", currentYear, " BetAnalytix. All rights reserved."), /*#__PURE__*/_react.default.createElement("p", {
-    className: "text-tertiary"
-  }, "Data is stored locally in your browser. No personal information is collected.")))));
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("footer", {
+    className: "app-footer",
+    children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+      className: "container",
+      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "footer-content",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "footer-logo",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+            children: "BetAnalytix"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            className: "text-secondary",
+            children: "Smart Betting Analytics"
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "footer-legal",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+            className: "disclaimer",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+              className: "fas fa-exclamation-triangle"
+            }), " Gambling involves risk. Please gamble responsibly."]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+            className: "copyright",
+            children: ["\xA9 ", currentYear, " BetAnalytix. All rights reserved."]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            className: "text-tertiary",
+            children: "Data is stored locally in your browser. No personal information is collected."
+          })]
+        })]
+      })
+    })
+  });
 };
 var _default = exports.default = Footer;
-},{"react":"n8MK"}],"IxO8":[function(require,module,exports) {
+},{"react":"n8MK","react/jsx-runtime":"plwR"}],"IxO8":[function(require,module,exports) {
 var toPropertyKey = require("./toPropertyKey.js");
 function _defineProperty(e, r, t) {
   return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
@@ -53874,12 +54204,12 @@ var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
 var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
 var _react = _interopRequireWildcard(require("react"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-// Simplified BetLogger component compatible with React
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; } // Simplified BetLogger component compatible with React
 var BetLogger = function BetLogger() {
   var _useState = (0, _react.useState)({
       sport: '',
@@ -53988,316 +54318,416 @@ var BetLogger = function BetLogger() {
     // Clear any pending delete confirmation when switching views
     setDeleteConfirmId(null);
   };
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     className: "bet-logger-container",
     style: {
       position: 'relative',
       zIndex: 5
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "bet-logger-header"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Bet Logger"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "toggle-view-btn",
-    onClick: toggleView
-  }, activeView === 'form' ? 'View History' : 'Log New Bet')), activeView === 'form' ? /*#__PURE__*/_react.default.createElement("div", {
-    className: "bet-form-container card",
-    style: {
-      position: 'relative',
-      zIndex: 10
-    }
-  }, /*#__PURE__*/_react.default.createElement("h3", null, editingId ? 'Edit Bet' : 'Log New Bet'), /*#__PURE__*/_react.default.createElement("form", {
-    onSubmit: handleSubmit
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "sport"
-  }, "Sport"), /*#__PURE__*/_react.default.createElement("select", {
-    id: "sport",
-    name: "sport",
-    value: formData.sport,
-    onChange: handleInputChange,
-    required: true,
-    style: {
-      position: 'relative',
-      zIndex: 15,
-      background: 'rgba(30, 30, 30, 0.9)'
-    }
-  }, /*#__PURE__*/_react.default.createElement("option", {
-    value: ""
-  }, "Select Sport"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Basketball"
-  }, "Basketball"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Football"
-  }, "Football"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Baseball"
-  }, "Baseball"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Hockey"
-  }, "Hockey"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Soccer"
-  }, "Soccer"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "MMA/Boxing"
-  }, "MMA/Boxing"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Tennis"
-  }, "Tennis"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Golf"
-  }, "Golf"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "Other"
-  }, "Other"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "league"
-  }, "League"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "league",
-    name: "league",
-    value: formData.league,
-    onChange: handleInputChange,
-    placeholder: "NBA, NFL, etc.",
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "team"
-  }, "Team/Player"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "team",
-    name: "team",
-    value: formData.team,
-    onChange: handleInputChange,
-    required: true,
-    placeholder: "Your pick",
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "opponent"
-  }, "Opponent"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "opponent",
-    name: "opponent",
-    value: formData.opponent,
-    onChange: handleInputChange,
-    placeholder: "Opposing team/player",
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "betType"
-  }, "Bet Type"), /*#__PURE__*/_react.default.createElement("select", {
-    id: "betType",
-    name: "betType",
-    value: formData.betType,
-    onChange: handleInputChange,
-    required: true,
-    style: {
-      position: 'relative',
-      zIndex: 15,
-      background: 'rgba(30, 30, 30, 0.9)'
-    }
-  }, /*#__PURE__*/_react.default.createElement("option", {
-    value: "moneyline"
-  }, "Moneyline"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "spread"
-  }, "Spread"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "total"
-  }, "Over/Under"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "prop"
-  }, "Prop"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "parlay"
-  }, "Parlay"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "future"
-  }, "Future"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "odds"
-  }, "Odds"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "odds",
-    name: "odds",
-    value: formData.odds,
-    onChange: handleInputChange,
-    placeholder: "+150, -110, etc.",
-    required: true,
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "stake"
-  }, "Stake Amount"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    id: "stake",
-    name: "stake",
-    value: formData.stake,
-    onChange: handleInputChange,
-    placeholder: "Amount wagered",
-    required: true,
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "selectedDate"
-  }, "Date"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "date",
-    id: "selectedDate",
-    name: "selectedDate",
-    value: formData.selectedDate,
-    onChange: handleInputChange,
-    required: true,
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group full-width"
-  }, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "notes"
-  }, "Notes"), /*#__PURE__*/_react.default.createElement("textarea", {
-    id: "notes",
-    name: "notes",
-    value: formData.notes,
-    onChange: handleInputChange,
-    placeholder: "Additional details, reasoning, etc.",
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-actions"
-  }, editingId && /*#__PURE__*/_react.default.createElement("button", {
-    type: "button",
-    className: "cancel-button",
-    onClick: function onClick() {
-      setEditingId(null);
-      setFormData({
-        sport: '',
-        league: '',
-        team: '',
-        opponent: '',
-        betType: 'moneyline',
-        odds: '',
-        stake: '',
-        selectedDate: new Date().toISOString().split('T')[0],
-        notes: ''
-      });
     },
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  }, "Cancel"), /*#__PURE__*/_react.default.createElement("button", {
-    type: "submit",
-    className: "submit-button",
-    style: {
-      position: 'relative',
-      zIndex: 15
-    }
-  }, editingId ? 'Update Bet' : 'Save Bet')))) : /*#__PURE__*/_react.default.createElement("div", {
-    className: "bet-history"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Betting History"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "history-instructions"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "View your logged bets below. Click ", /*#__PURE__*/_react.default.createElement("strong", null, "Edit"), " to modify a bet or ", /*#__PURE__*/_react.default.createElement("strong", null, "Delete"), " to remove it completely.")), bets.length === 0 ? /*#__PURE__*/_react.default.createElement("div", {
-    className: "empty-history"
-  }, /*#__PURE__*/_react.default.createElement("p", null, "No bets logged yet. Start logging your bets to see them here.")) : /*#__PURE__*/_react.default.createElement("div", {
-    className: "bet-cards"
-  }, bets.map(function (bet) {
-    return /*#__PURE__*/_react.default.createElement("div", {
-      key: bet.id,
-      className: "bet-card card"
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-header"
-    }, /*#__PURE__*/_react.default.createElement("h4", null, bet.team, " vs ", bet.opponent), /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-actions"
-    }, deleteConfirmId === bet.id ? /*#__PURE__*/_react.default.createElement("div", {
-      className: "delete-confirmation"
-    }, /*#__PURE__*/_react.default.createElement("span", null, "Delete this bet?"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "confirm-delete-button",
-      onClick: function onClick() {
-        return handleDelete(bet.id);
-      }
-    }, "Yes"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "cancel-delete-button",
-      onClick: cancelDelete
-    }, "No")) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("button", {
-      className: "edit-button",
-      onClick: function onClick() {
-        return handleEdit(bet);
-      }
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "action-icon"
-    }, "\u270F\uFE0F"), " Edit"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "delete-button",
-      onClick: function onClick() {
-        return confirmDelete(bet.id);
-      },
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "bet-logger-header",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+        children: "Bet Logger"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+        className: "toggle-view-btn",
+        onClick: toggleView,
+        children: activeView === 'form' ? 'View History' : 'Log New Bet'
+      })]
+    }), activeView === 'form' ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "bet-form-container card",
       style: {
-        color: '#fff',
-        backgroundColor: '#f44336',
-        fontWeight: 'bold'
-      }
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "action-icon"
-    }, "\uD83D\uDDD1\uFE0F"), " Delete")))), /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-details"
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-detail"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "label"
-    }, "Sport:"), /*#__PURE__*/_react.default.createElement("span", {
-      className: "value"
-    }, bet.sport, " ", bet.league ? "(".concat(bet.league, ")") : '')), /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-detail"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "label"
-    }, "Bet Type:"), /*#__PURE__*/_react.default.createElement("span", {
-      className: "value"
-    }, bet.betType)), /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-detail"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "label"
-    }, "Odds:"), /*#__PURE__*/_react.default.createElement("span", {
-      className: "value"
-    }, bet.odds)), /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-detail"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "label"
-    }, "Stake:"), /*#__PURE__*/_react.default.createElement("span", {
-      className: "value"
-    }, "$", bet.stake)), /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-detail"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "label"
-    }, "Date:"), /*#__PURE__*/_react.default.createElement("span", {
-      className: "value"
-    }, bet.selectedDate))), bet.notes && /*#__PURE__*/_react.default.createElement("div", {
-      className: "bet-notes"
-    }, /*#__PURE__*/_react.default.createElement("p", null, bet.notes)));
-  }))));
+        position: 'relative',
+        zIndex: 10
+      },
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+        children: editingId ? 'Edit Bet' : 'Log New Bet'
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("form", {
+        onSubmit: handleSubmit,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "form-row",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "sport",
+              children: "Sport"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("select", {
+              id: "sport",
+              name: "sport",
+              value: formData.sport,
+              onChange: handleInputChange,
+              required: true,
+              style: {
+                position: 'relative',
+                zIndex: 15,
+                background: 'rgba(30, 30, 30, 0.9)'
+              },
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "",
+                children: "Select Sport"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Basketball",
+                children: "Basketball"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Football",
+                children: "Football"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Baseball",
+                children: "Baseball"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Hockey",
+                children: "Hockey"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Soccer",
+                children: "Soccer"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "MMA/Boxing",
+                children: "MMA/Boxing"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Tennis",
+                children: "Tennis"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Golf",
+                children: "Golf"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "Other",
+                children: "Other"
+              })]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "league",
+              children: "League"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "text",
+              id: "league",
+              name: "league",
+              value: formData.league,
+              onChange: handleInputChange,
+              placeholder: "NBA, NFL, etc.",
+              style: {
+                position: 'relative',
+                zIndex: 15
+              }
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "form-row",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "team",
+              children: "Team/Player"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "text",
+              id: "team",
+              name: "team",
+              value: formData.team,
+              onChange: handleInputChange,
+              required: true,
+              placeholder: "Your pick",
+              style: {
+                position: 'relative',
+                zIndex: 15
+              }
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "opponent",
+              children: "Opponent"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "text",
+              id: "opponent",
+              name: "opponent",
+              value: formData.opponent,
+              onChange: handleInputChange,
+              placeholder: "Opposing team/player",
+              style: {
+                position: 'relative',
+                zIndex: 15
+              }
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "form-row",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "betType",
+              children: "Bet Type"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("select", {
+              id: "betType",
+              name: "betType",
+              value: formData.betType,
+              onChange: handleInputChange,
+              required: true,
+              style: {
+                position: 'relative',
+                zIndex: 15,
+                background: 'rgba(30, 30, 30, 0.9)'
+              },
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "moneyline",
+                children: "Moneyline"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "spread",
+                children: "Spread"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "total",
+                children: "Over/Under"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "prop",
+                children: "Prop"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "parlay",
+                children: "Parlay"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "future",
+                children: "Future"
+              })]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "odds",
+              children: "Odds"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "text",
+              id: "odds",
+              name: "odds",
+              value: formData.odds,
+              onChange: handleInputChange,
+              placeholder: "+150, -110, etc.",
+              required: true,
+              style: {
+                position: 'relative',
+                zIndex: 15
+              }
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "form-row",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "stake",
+              children: "Stake Amount"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              id: "stake",
+              name: "stake",
+              value: formData.stake,
+              onChange: handleInputChange,
+              placeholder: "Amount wagered",
+              required: true,
+              style: {
+                position: 'relative',
+                zIndex: 15
+              }
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              htmlFor: "selectedDate",
+              children: "Date"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "date",
+              id: "selectedDate",
+              name: "selectedDate",
+              value: formData.selectedDate,
+              onChange: handleInputChange,
+              required: true,
+              style: {
+                position: 'relative',
+                zIndex: 15
+              }
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "form-group full-width",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+            htmlFor: "notes",
+            children: "Notes"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("textarea", {
+            id: "notes",
+            name: "notes",
+            value: formData.notes,
+            onChange: handleInputChange,
+            placeholder: "Additional details, reasoning, etc.",
+            style: {
+              position: 'relative',
+              zIndex: 15
+            }
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "form-actions",
+          children: [editingId && /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+            type: "button",
+            className: "cancel-button",
+            onClick: function onClick() {
+              setEditingId(null);
+              setFormData({
+                sport: '',
+                league: '',
+                team: '',
+                opponent: '',
+                betType: 'moneyline',
+                odds: '',
+                stake: '',
+                selectedDate: new Date().toISOString().split('T')[0],
+                notes: ''
+              });
+            },
+            style: {
+              position: 'relative',
+              zIndex: 15
+            },
+            children: "Cancel"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+            type: "submit",
+            className: "submit-button",
+            style: {
+              position: 'relative',
+              zIndex: 15
+            },
+            children: editingId ? 'Update Bet' : 'Save Bet'
+          })]
+        })]
+      })]
+    }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "bet-history",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+        children: "Betting History"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "history-instructions",
+        children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+          children: ["View your logged bets below. Click ", /*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+            children: "Edit"
+          }), " to modify a bet or ", /*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+            children: "Delete"
+          }), " to remove it completely."]
+        })
+      }), bets.length === 0 ? /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "empty-history",
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          children: "No bets logged yet. Start logging your bets to see them here."
+        })
+      }) : /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "bet-cards",
+        children: bets.map(function (bet) {
+          return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "bet-card card",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "bet-header",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("h4", {
+                children: [bet.team, " vs ", bet.opponent]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                className: "bet-actions",
+                children: deleteConfirmId === bet.id ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "delete-confirmation",
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                    children: "Delete this bet?"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+                    className: "confirm-delete-button",
+                    onClick: function onClick() {
+                      return handleDelete(bet.id);
+                    },
+                    children: "Yes"
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+                    className: "cancel-delete-button",
+                    onClick: cancelDelete,
+                    children: "No"
+                  })]
+                }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+                    className: "edit-button",
+                    onClick: function onClick() {
+                      return handleEdit(bet);
+                    },
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                      className: "action-icon",
+                      children: "\u270F\uFE0F"
+                    }), " Edit"]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+                    className: "delete-button",
+                    onClick: function onClick() {
+                      return confirmDelete(bet.id);
+                    },
+                    style: {
+                      color: '#fff',
+                      backgroundColor: '#f44336',
+                      fontWeight: 'bold'
+                    },
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                      className: "action-icon",
+                      children: "\uD83D\uDDD1\uFE0F"
+                    }), " Delete"]
+                  })]
+                })
+              })]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "bet-details",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "bet-detail",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "label",
+                  children: "Sport:"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+                  className: "value",
+                  children: [bet.sport, " ", bet.league ? "(".concat(bet.league, ")") : '']
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "bet-detail",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "label",
+                  children: "Bet Type:"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "value",
+                  children: bet.betType
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "bet-detail",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "label",
+                  children: "Odds:"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "value",
+                  children: bet.odds
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "bet-detail",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "label",
+                  children: "Stake:"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+                  className: "value",
+                  children: ["$", bet.stake]
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "bet-detail",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "label",
+                  children: "Date:"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  className: "value",
+                  children: bet.selectedDate
+                })]
+              })]
+            }), bet.notes && /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "bet-notes",
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+                children: bet.notes
+              })
+            })]
+          }, bet.id);
+        })
+      })]
+    })]
+  });
 };
 var _default = exports.default = BetLogger;
-},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/defineProperty":"IxO8","@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK"}],"pnn1":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/defineProperty":"IxO8","@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK","react/jsx-runtime":"plwR"}],"pnn1":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -54584,6 +55014,7 @@ var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/sli
 var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
 var _react = _interopRequireWildcard(require("react"));
 var _gemmaService = require("../utils/gemmaService");
+var _jsxRuntime = require("react/jsx-runtime");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
@@ -55113,220 +55544,300 @@ var AIAssistant = function AIAssistant() {
     if (diffMinutes < 1440) return "".concat(Math.floor(diffMinutes / 60), "h ago");
     return "".concat(Math.floor(diffMinutes / 1440), "d ago");
   };
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-assistant-container ".concat(animationState, " ").concat(entranceAnimation ? 'entrance-animation' : '')
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-header"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-header-main"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-header-icon ".concat(pulseEffect ? 'pulse' : '')
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-brain"
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-icon-pulse"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-header-content"
-  }, /*#__PURE__*/_react.default.createElement("h2", null, "Betting Insights AI"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "assistant-description"
-  }, "Advanced AI-powered analytics and recommendations based on your betting history")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "model-info"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "model-name"
-  }, modelInfo.modelName), /*#__PURE__*/_react.default.createElement("div", {
-    className: "model-updated"
-  }, "Updated: ", modelInfo.lastUpdated), /*#__PURE__*/_react.default.createElement("div", {
-    className: "model-badges"
-  }, modelInfo.specialties.map(function (specialty, index) {
-    return /*#__PURE__*/_react.default.createElement("span", {
-      key: index,
-      className: "model-specialty"
-    }, specialty);
-  })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-tabs"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "ai-tab-btn ".concat(activeTab === 'strategy' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('strategy');
-    }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-chart-line"
-  }), "Strategy Insights"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "ai-tab-btn ".concat(activeTab === 'risk' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('risk');
-    }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-exclamation-triangle"
-  }), "Risk Alerts"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "ai-tab-btn ".concat(activeTab === 'trend' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('trend');
-    }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-chart-bar"
-  }), "Trend Analysis"), /*#__PURE__*/_react.default.createElement("button", {
-    className: "ai-tab-btn ".concat(activeTab === 'custom' ? 'active' : ''),
-    onClick: function onClick() {
-      return setActiveTab('custom');
-    }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-search"
-  }), "Custom Analysis"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-content"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "insights-container"
-  }, loading && insights.length === 0 ? /*#__PURE__*/_react.default.createElement("div", {
-    className: "loading-state"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "loading-spinner"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Analyzing your betting data...")) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, insights.filter(function (insight) {
-    return activeTab === 'all' || insight.type === activeTab;
-  }).length === 0 ? /*#__PURE__*/_react.default.createElement("div", {
-    className: "empty-state"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "empty-icon"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-search"
-  })), /*#__PURE__*/_react.default.createElement("h3", null, "No ", activeTab, " insights available"), /*#__PURE__*/_react.default.createElement("p", null, "Ask the AI to analyze your betting patterns or switch to another tab to view different insights.")) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "insights-header"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "generate-insights-btn",
-    onClick: handleGenerateNewInsights,
-    disabled: loading
-  }, loading ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-sync fa-spin"
-  }), " Generating...") : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-sync"
-  }), " Generate New Insights"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "insights-list ".concat(animationState)
-  }, insights.filter(function (insight) {
-    return activeTab === 'all' || insight.type === activeTab;
-  }).map(function (insight, index) {
-    return /*#__PURE__*/_react.default.createElement("div", {
-      key: insight.id,
-      className: "insight-card ".concat(insight.type, " fade-in-up"),
-      style: {
-        animationDelay: "".concat(index * 0.1, "s")
-      }
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "insight-header"
-    }, /*#__PURE__*/_react.default.createElement("h3", {
-      className: "insight-title"
-    }, insight.title), /*#__PURE__*/_react.default.createElement("div", {
-      className: "insight-meta"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "insight-time"
-    }, formatRelativeTime(insight.timestamp)), /*#__PURE__*/_react.default.createElement("span", {
-      className: "insight-confidence"
-    }, "Confidence: ", (insight.confidence * 100).toFixed(0), "%"), /*#__PURE__*/_react.default.createElement("span", {
-      className: "insight-datapoints"
-    }, "Based on ", insight.dataPoints, " bets"))), /*#__PURE__*/_react.default.createElement("div", {
-      className: "insight-content"
-    }, insight.content.split('\n\n').map(function (paragraph, i) {
-      return /*#__PURE__*/_react.default.createElement("p", {
-        key: i,
-        className: "insight-paragraph"
-      }, paragraph.startsWith('**') && paragraph.endsWith('**') ? /*#__PURE__*/_react.default.createElement("strong", null, paragraph.slice(2, -2)) : paragraph.split('\n').map(function (line, j) {
-        return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, {
-          key: j
-        }, line.startsWith('- ') ? /*#__PURE__*/_react.default.createElement("li", null, line.substring(2)) : line.startsWith('**') && line.endsWith(':**') ? /*#__PURE__*/_react.default.createElement("strong", null, line.slice(2, -3), ":") : line, j < paragraph.split('\n').length - 1 && /*#__PURE__*/_react.default.createElement("br", null));
-      }));
-    })), /*#__PURE__*/_react.default.createElement("div", {
-      className: "insight-actions"
-    }, /*#__PURE__*/_react.default.createElement("button", {
-      className: "insight-action-button explore-btn",
-      onClick: function onClick() {
-        return exploreInsight(insight);
-      }
-    }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "fas fa-search-plus"
-    }), " Explore"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "insight-action-button"
-    }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "fas fa-bookmark"
-    }), " Save"), /*#__PURE__*/_react.default.createElement("button", {
-      className: "insight-action-button"
-    }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "fas fa-share-alt"
-    }), " Share")));
-  }))))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "prompt-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "prompt-area",
-    ref: promptRef
-  }, showTypingAnimation || visibleResponse ? /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-response"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "ai-avatar"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-robot"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "response-content"
-  }, visibleResponse.split('\n\n').map(function (paragraph, i) {
-    return /*#__PURE__*/_react.default.createElement("p", {
-      key: i,
-      className: "response-paragraph"
-    }, paragraph.startsWith('**') && paragraph.endsWith('**') ? /*#__PURE__*/_react.default.createElement("strong", null, paragraph.slice(2, -2)) : paragraph.split('\n').map(function (line, j) {
-      return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, {
-        key: j
-      }, line.startsWith('- ') ? /*#__PURE__*/_react.default.createElement("li", null, line.substring(2)) : line.startsWith('**') && line.endsWith(':**') ? /*#__PURE__*/_react.default.createElement("strong", null, line.slice(2, -3), ":") : line, j < paragraph.split('\n').length - 1 && /*#__PURE__*/_react.default.createElement("br", null));
-    }));
-  }), showTypingAnimation && /*#__PURE__*/_react.default.createElement("span", {
-    className: "typing-indicator"
-  }, "|"))) : /*#__PURE__*/_react.default.createElement("div", {
-    className: "prompt-placeholder"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-lightbulb prompt-icon"
-  }), /*#__PURE__*/_react.default.createElement("p", null, "Ask the AI for betting insights based on your history"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "example-queries"
-  }, ['Analyze my NBA betting patterns', 'What type of bets have been most profitable for me?', 'Should I adjust my bankroll management?', 'What trends do you see in my baseball bets?'].map(function (example, i) {
-    return /*#__PURE__*/_react.default.createElement("button", {
-      key: i,
-      className: "example-query",
-      onClick: function onClick() {
-        return setQuery(example);
-      }
-    }, example);
-  })))), /*#__PURE__*/_react.default.createElement("form", {
-    onSubmit: handleSubmit,
-    className: "prompt-form"
-  }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    value: query,
-    onChange: function onChange(e) {
-      return setQuery(e.target.value);
-    },
-    placeholder: "Ask for betting insights or advice...",
-    disabled: isPrompting,
-    className: "prompt-input"
-  }), /*#__PURE__*/_react.default.createElement("button", {
-    type: "submit",
-    disabled: isPrompting || !query.trim(),
-    className: "prompt-submit ".concat(isPrompting ? 'prompting' : '')
-  }, isPrompting ? /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-circle-notch fa-spin"
-  }) : /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-paper-plane"
-  }))), promptHistory.length > 0 && /*#__PURE__*/_react.default.createElement("div", {
-    className: "prompt-history"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "Recent Queries"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "history-items"
-  }, promptHistory.map(function (item, index) {
-    return /*#__PURE__*/_react.default.createElement("button", {
-      key: index,
-      className: "history-item",
-      onClick: function onClick() {
-        return !isPrompting && setQuery(item);
-      },
-      disabled: isPrompting
-    }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "fas fa-history"
-    }), /*#__PURE__*/_react.default.createElement("span", null, item.length > 40 ? item.substring(0, 40) + '...' : item));
-  }))))));
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "ai-assistant-container ".concat(animationState, " ").concat(entranceAnimation ? 'entrance-animation' : ''),
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "ai-header",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "ai-header-main",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "ai-header-icon ".concat(pulseEffect ? 'pulse' : ''),
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+            className: "fas fa-brain"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "ai-icon-pulse"
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "ai-header-content",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+            children: "Betting Insights AI"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            className: "assistant-description",
+            children: "Advanced AI-powered analytics and recommendations based on your betting history"
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "model-info",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "model-name",
+            children: modelInfo.modelName
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "model-updated",
+            children: ["Updated: ", modelInfo.lastUpdated]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "model-badges",
+            children: modelInfo.specialties.map(function (specialty, index) {
+              return /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                className: "model-specialty",
+                children: specialty
+              }, index);
+            })
+          })]
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "ai-tabs",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+          className: "ai-tab-btn ".concat(activeTab === 'strategy' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('strategy');
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+            className: "fas fa-chart-line"
+          }), "Strategy Insights"]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+          className: "ai-tab-btn ".concat(activeTab === 'risk' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('risk');
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+            className: "fas fa-exclamation-triangle"
+          }), "Risk Alerts"]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+          className: "ai-tab-btn ".concat(activeTab === 'trend' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('trend');
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+            className: "fas fa-chart-bar"
+          }), "Trend Analysis"]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+          className: "ai-tab-btn ".concat(activeTab === 'custom' ? 'active' : ''),
+          onClick: function onClick() {
+            return setActiveTab('custom');
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+            className: "fas fa-search"
+          }), "Custom Analysis"]
+        })]
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "ai-content",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+        className: "insights-container",
+        children: loading && insights.length === 0 ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "loading-state",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "loading-spinner"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: "Analyzing your betting data..."
+          })]
+        }) : /*#__PURE__*/(0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+          children: insights.filter(function (insight) {
+            return activeTab === 'all' || insight.type === activeTab;
+          }).length === 0 ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "empty-state",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "empty-icon",
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                className: "fas fa-search"
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("h3", {
+              children: ["No ", activeTab, " insights available"]
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+              children: "Ask the AI to analyze your betting patterns or switch to another tab to view different insights."
+            })]
+          }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "insights-header",
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+                className: "generate-insights-btn",
+                onClick: handleGenerateNewInsights,
+                disabled: loading,
+                children: loading ? /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                    className: "fas fa-sync fa-spin"
+                  }), " Generating..."]
+                }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                    className: "fas fa-sync"
+                  }), " Generate New Insights"]
+                })
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "insights-list ".concat(animationState),
+              children: insights.filter(function (insight) {
+                return activeTab === 'all' || insight.type === activeTab;
+              }).map(function (insight, index) {
+                return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                  className: "insight-card ".concat(insight.type, " fade-in-up"),
+                  style: {
+                    animationDelay: "".concat(index * 0.1, "s")
+                  },
+                  children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                    className: "insight-header",
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+                      className: "insight-title",
+                      children: insight.title
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                      className: "insight-meta",
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                        className: "insight-time",
+                        children: formatRelativeTime(insight.timestamp)
+                      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+                        className: "insight-confidence",
+                        children: ["Confidence: ", (insight.confidence * 100).toFixed(0), "%"]
+                      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+                        className: "insight-datapoints",
+                        children: ["Based on ", insight.dataPoints, " bets"]
+                      })]
+                    })]
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+                    className: "insight-content",
+                    children: insight.content.split('\n\n').map(function (paragraph, i) {
+                      return /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+                        className: "insight-paragraph",
+                        children: paragraph.startsWith('**') && paragraph.endsWith('**') ? /*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+                          children: paragraph.slice(2, -2)
+                        }) : paragraph.split('\n').map(function (line, j) {
+                          return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_react.default.Fragment, {
+                            children: [line.startsWith('- ') ? /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+                              children: line.substring(2)
+                            }) : line.startsWith('**') && line.endsWith(':**') ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("strong", {
+                              children: [line.slice(2, -3), ":"]
+                            }) : line, j < paragraph.split('\n').length - 1 && /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {})]
+                          }, j);
+                        })
+                      }, i);
+                    })
+                  }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                    className: "insight-actions",
+                    children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+                      className: "insight-action-button explore-btn",
+                      onClick: function onClick() {
+                        return exploreInsight(insight);
+                      },
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                        className: "fas fa-search-plus"
+                      }), " Explore"]
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+                      className: "insight-action-button",
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                        className: "fas fa-bookmark"
+                      }), " Save"]
+                    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+                      className: "insight-action-button",
+                      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                        className: "fas fa-share-alt"
+                      }), " Share"]
+                    })]
+                  })]
+                }, insight.id);
+              })
+            })]
+          })
+        })
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "prompt-container",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          className: "prompt-area",
+          ref: promptRef,
+          children: showTypingAnimation || visibleResponse ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "ai-response",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "ai-avatar",
+              children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                className: "fas fa-robot"
+              })
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "response-content",
+              children: [visibleResponse.split('\n\n').map(function (paragraph, i) {
+                return /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+                  className: "response-paragraph",
+                  children: paragraph.startsWith('**') && paragraph.endsWith('**') ? /*#__PURE__*/(0, _jsxRuntime.jsx)("strong", {
+                    children: paragraph.slice(2, -2)
+                  }) : paragraph.split('\n').map(function (line, j) {
+                    return /*#__PURE__*/(0, _jsxRuntime.jsxs)(_react.default.Fragment, {
+                      children: [line.startsWith('- ') ? /*#__PURE__*/(0, _jsxRuntime.jsx)("li", {
+                        children: line.substring(2)
+                      }) : line.startsWith('**') && line.endsWith(':**') ? /*#__PURE__*/(0, _jsxRuntime.jsxs)("strong", {
+                        children: [line.slice(2, -3), ":"]
+                      }) : line, j < paragraph.split('\n').length - 1 && /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {})]
+                    }, j);
+                  })
+                }, i);
+              }), showTypingAnimation && /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                className: "typing-indicator",
+                children: "|"
+              })]
+            })]
+          }) : /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "prompt-placeholder",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+              className: "fas fa-lightbulb prompt-icon"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+              children: "Ask the AI for betting insights based on your history"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "example-queries",
+              children: ['Analyze my NBA betting patterns', 'What type of bets have been most profitable for me?', 'Should I adjust my bankroll management?', 'What trends do you see in my baseball bets?'].map(function (example, i) {
+                return /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+                  className: "example-query",
+                  onClick: function onClick() {
+                    return setQuery(example);
+                  },
+                  children: example
+                }, i);
+              })
+            })]
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("form", {
+          onSubmit: handleSubmit,
+          className: "prompt-form",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+            type: "text",
+            value: query,
+            onChange: function onChange(e) {
+              return setQuery(e.target.value);
+            },
+            placeholder: "Ask for betting insights or advice...",
+            disabled: isPrompting,
+            className: "prompt-input"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+            type: "submit",
+            disabled: isPrompting || !query.trim(),
+            className: "prompt-submit ".concat(isPrompting ? 'prompting' : ''),
+            children: isPrompting ? /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+              className: "fas fa-circle-notch fa-spin"
+            }) : /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+              className: "fas fa-paper-plane"
+            })
+          })]
+        }), promptHistory.length > 0 && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "prompt-history",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
+            children: "Recent Queries"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "history-items",
+            children: promptHistory.map(function (item, index) {
+              return /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+                className: "history-item",
+                onClick: function onClick() {
+                  return !isPrompting && setQuery(item);
+                },
+                disabled: isPrompting,
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                  className: "fas fa-history"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+                  children: item.length > 40 ? item.substring(0, 40) + '...' : item
+                })]
+              }, index);
+            })
+          })]
+        })]
+      })]
+    })]
+  });
 };
 var _default = exports.default = AIAssistant;
-},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/asyncToGenerator":"agGE","@babel/runtime/helpers/slicedToArray":"HETk","@babel/runtime/regenerator":"PMvg","react":"n8MK","../utils/gemmaService":"pnn1"}],"jZUz":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/asyncToGenerator":"agGE","@babel/runtime/helpers/slicedToArray":"HETk","@babel/runtime/regenerator":"PMvg","react":"n8MK","../utils/gemmaService":"pnn1","react/jsx-runtime":"plwR"}],"jZUz":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55337,12 +55848,12 @@ var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
 var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
 var _react = _interopRequireWildcard(require("react"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-// Enhanced Tools component with improved UI and functionality
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { (0, _defineProperty2.default)(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; } // Enhanced Tools component with improved UI and functionality
 var Tools = function Tools() {
   var _useState = (0, _react.useState)('odds'),
     _useState2 = (0, _slicedToArray2.default)(_useState, 2),
@@ -55521,403 +56032,579 @@ var Tools = function Tools() {
       maximumFractionDigits: 2
     });
   };
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "tools-container"
-  }, /*#__PURE__*/_react.default.createElement("h2", {
-    className: "tools-title"
-  }, "Betting Tools & Calculators"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "tools-description"
-  }, "Powerful calculators to optimize your betting strategy and improve decision making."), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-selector"
-  }, /*#__PURE__*/_react.default.createElement("button", {
-    className: "calc-tab ".concat(activeCalculator === 'odds' ? 'active' : ''),
-    onClick: function onClick() {
-      return handleCalculatorChange('odds');
-    },
-    disabled: isCalculatorChanging
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-exchange-alt"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Odds Converter")), /*#__PURE__*/_react.default.createElement("button", {
-    className: "calc-tab ".concat(activeCalculator === 'ev' ? 'active' : ''),
-    onClick: function onClick() {
-      return handleCalculatorChange('ev');
-    },
-    disabled: isCalculatorChanging
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-balance-scale"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Expected Value")), /*#__PURE__*/_react.default.createElement("button", {
-    className: "calc-tab ".concat(activeCalculator === 'kelly' ? 'active' : ''),
-    onClick: function onClick() {
-      return handleCalculatorChange('kelly');
-    },
-    disabled: isCalculatorChanging
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-percentage"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Kelly Criterion")), /*#__PURE__*/_react.default.createElement("button", {
-    className: "calc-tab ".concat(activeCalculator === 'parlay' ? 'active' : ''),
-    onClick: function onClick() {
-      return handleCalculatorChange('parlay');
-    },
-    disabled: isCalculatorChanging
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-link"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Parlay Calculator")), /*#__PURE__*/_react.default.createElement("button", {
-    className: "calc-tab ".concat(activeCalculator === 'hedge' ? 'active' : ''),
-    onClick: function onClick() {
-      return handleCalculatorChange('hedge');
-    },
-    disabled: isCalculatorChanging
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-shield-alt"
-  }), /*#__PURE__*/_react.default.createElement("span", null, "Hedge Calculator"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-container card ".concat(calculatorClasses)
-  }, activeCalculator === 'odds' && /*#__PURE__*/_react.default.createElement("div", {
-    className: "odds-converter calculator"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Odds Converter"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-inputs"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Enter Odds"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    value: values.oddsValue,
-    onChange: function onChange(e) {
-      return handleInputChange('oddsValue', e.target.value);
-    },
-    placeholder: "Enter odds value",
-    className: "glass-input"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Format"), /*#__PURE__*/_react.default.createElement("select", {
-    value: oddsFormat,
-    onChange: function onChange(e) {
-      return setOddsFormat(e.target.value);
-    },
-    className: "glass-input"
-  }, /*#__PURE__*/_react.default.createElement("option", {
-    value: "decimal"
-  }, "Decimal"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "american"
-  }, "American"), /*#__PURE__*/_react.default.createElement("option", {
-    value: "fractional"
-  }, "Fractional")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-results"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Decimal:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value highlight"
-  }, values.oddsValue ? convertOdds(values.oddsValue, oddsFormat, 'decimal') : '-')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "American:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, values.oddsValue ? convertOdds(values.oddsValue, oddsFormat, 'american') : '-')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Fractional:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, values.oddsValue ? convertOdds(values.oddsValue, oddsFormat, 'fractional') : '-')), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Implied Probability:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value accent"
-  }, values.oddsValue && !isNaN(parseFloat(convertOdds(values.oddsValue, oddsFormat, 'decimal'))) ? (100 / parseFloat(convertOdds(values.oddsValue, oddsFormat, 'decimal'))).toFixed(2) + '%' : '-'))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info-box"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "Using the Odds Converter"), /*#__PURE__*/_react.default.createElement("p", null, "Enter odds in your preferred format and instantly see conversions to all other formats. This helps compare odds across different sportsbooks and regions."))), activeCalculator === 'ev' && /*#__PURE__*/_react.default.createElement("div", {
-    className: "ev-calculator calculator"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Expected Value Calculator"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-inputs"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Your Assessed Probability (%)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1",
-    max: "99",
-    value: values.probability,
-    onChange: function onChange(e) {
-      return handleInputChange('probability', e.target.value);
-    },
-    className: "glass-input"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Payout Odds (Decimal)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1.01",
-    step: "0.01",
-    value: values.payoutOdds,
-    onChange: function onChange(e) {
-      return handleInputChange('payoutOdds', e.target.value);
-    },
-    className: "glass-input"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-results"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Expected Value:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value ".concat(parseFloat(calculateEV(values.probability, values.payoutOdds)) > 0 ? 'positive' : 'negative')
-  }, calculateEV(values.probability, values.payoutOdds), "%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Implied Probability:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, (100 / values.payoutOdds).toFixed(2), "%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Edge:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value ".concat(values.probability - 100 / values.payoutOdds > 0 ? 'positive' : 'negative')
-  }, (values.probability - 100 / values.payoutOdds).toFixed(2), "%"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "ev-gauge"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "ev-gauge-fill",
-    style: {
-      width: "".concat(Math.min(100, Math.max(0, parseFloat(calculateEV(values.probability, values.payoutOdds)) + 50)), "%"),
-      background: parseFloat(calculateEV(values.probability, values.payoutOdds)) > 0 ? 'linear-gradient(90deg, rgba(76, 175, 80, 0.2), rgba(76, 175, 80, 0.8))' : 'linear-gradient(90deg, rgba(244, 67, 54, 0.2), rgba(244, 67, 54, 0.8))'
-    }
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info-box"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "About Expected Value"), /*#__PURE__*/_react.default.createElement("p", null, "Expected Value (EV) helps determine if a bet offers value. A positive EV means the bet is profitable long-term. Always look for bets where your assessed probability is higher than the implied probability from the odds."))), activeCalculator === 'kelly' && /*#__PURE__*/_react.default.createElement("div", {
-    className: "kelly-calculator calculator"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Kelly Criterion Calculator"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-inputs"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Bankroll ($)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1",
-    step: "1",
-    value: values.bankroll,
-    onChange: function onChange(e) {
-      return handleInputChange('bankroll', e.target.value);
-    },
-    className: "glass-input"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Win Probability (%)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1",
-    max: "99",
-    value: values.kellyWinProb,
-    onChange: function onChange(e) {
-      return handleInputChange('kellyWinProb', e.target.value);
-    },
-    className: "glass-input"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Decimal Odds"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1.01",
-    step: "0.01",
-    value: values.kellyOdds,
-    onChange: function onChange(e) {
-      return handleInputChange('kellyOdds', e.target.value);
-    },
-    className: "glass-input"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-results"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Kelly Percentage:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value highlight"
-  }, (parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds)) * 100).toFixed(2), "%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Suggested Stake:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, "$", (values.bankroll * parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds))).toFixed(2))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Half Kelly (Conservative):"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, "$", (values.bankroll * parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds)) / 2).toFixed(2))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Quarter Kelly (Very Conservative):"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, "$", (values.bankroll * parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds)) / 4).toFixed(2)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info-box"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "Bankroll Management"), /*#__PURE__*/_react.default.createElement("p", null, "The Kelly Criterion helps optimize your bet sizing for maximum bankroll growth. Many professional bettors use Half Kelly or Quarter Kelly to reduce volatility while still capturing most of the growth potential."))), activeCalculator === 'parlay' && /*#__PURE__*/_react.default.createElement("div", {
-    className: "parlay-calculator calculator"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Parlay Calculator"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "parlay-legs"
-  }, values.parlayLegs.map(function (leg, index) {
-    return /*#__PURE__*/_react.default.createElement("div", {
-      key: index,
-      className: "parlay-leg"
-    }, /*#__PURE__*/_react.default.createElement("div", {
-      className: "leg-header"
-    }, /*#__PURE__*/_react.default.createElement("span", {
-      className: "leg-number"
-    }, "Leg ", index + 1), /*#__PURE__*/_react.default.createElement("button", {
-      type: "button",
-      className: "remove-leg-btn",
-      onClick: function onClick() {
-        return removeParlayLeg(index);
-      },
-      disabled: values.parlayLegs.length <= 1
-    }, /*#__PURE__*/_react.default.createElement("i", {
-      className: "fas fa-times"
-    }))), /*#__PURE__*/_react.default.createElement("div", {
-      className: "form-group"
-    }, /*#__PURE__*/_react.default.createElement("label", null, "Decimal Odds"), /*#__PURE__*/_react.default.createElement("input", {
-      type: "number",
-      min: "1.01",
-      step: "0.01",
-      value: leg.odds,
-      onChange: function onChange(e) {
-        return handleParlayLegChange(index, 'odds', e.target.value);
-      },
-      className: "glass-input"
-    })), /*#__PURE__*/_react.default.createElement("div", {
-      className: "form-group"
-    }, /*#__PURE__*/_react.default.createElement("label", null, "Probability (%)"), /*#__PURE__*/_react.default.createElement("input", {
-      type: "number",
-      min: "1",
-      max: "99",
-      value: leg.probability,
-      onChange: function onChange(e) {
-        return handleParlayLegChange(index, 'probability', e.target.value);
-      },
-      className: "glass-input"
-    })));
-  }), /*#__PURE__*/_react.default.createElement("button", {
-    type: "button",
-    className: "add-leg-btn",
-    onClick: addParlayLeg
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-plus"
-  }), " Add Leg")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-results mt-lg"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Parlay Odds:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value highlight"
-  }, calculateParlayOdds(values.parlayLegs))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Implied Probability:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, (100 / parseFloat(calculateParlayOdds(values.parlayLegs))).toFixed(2), "%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "True Probability:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, values.parlayLegs.filter(function (leg) {
-    return leg.probability && leg.odds;
-  }).reduce(function (acc, leg) {
-    return acc * (parseFloat(leg.probability) / 100);
-  }, 1) * 100 .toFixed(2), "%")), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Edge:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value ".concat(values.parlayLegs.filter(function (leg) {
-      return leg.probability && leg.odds;
-    }).reduce(function (acc, leg) {
-      return acc * (parseFloat(leg.probability) / 100);
-    }, 1) * 100 - 100 / parseFloat(calculateParlayOdds(values.parlayLegs)) > 0 ? 'positive' : 'negative')
-  }, (values.parlayLegs.filter(function (leg) {
-    return leg.probability && leg.odds;
-  }).reduce(function (acc, leg) {
-    return acc * (parseFloat(leg.probability) / 100);
-  }, 1) * 100 - 100 / parseFloat(calculateParlayOdds(values.parlayLegs))).toFixed(2), "%"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info-box"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "About Parlays"), /*#__PURE__*/_react.default.createElement("p", null, "Parlays combine multiple bets for higher potential payouts, but all legs must win. While tempting, most parlays have negative expected value due to compounding vig. Use this calculator to find rare +EV parlay opportunities."))), activeCalculator === 'hedge' && /*#__PURE__*/_react.default.createElement("div", {
-    className: "hedge-calculator calculator"
-  }, /*#__PURE__*/_react.default.createElement("h3", null, "Hedge Calculator"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-inputs"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Original Bet Amount ($)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1",
-    step: "1",
-    value: values.originalBet,
-    onChange: function onChange(e) {
-      return handleInputChange('originalBet', e.target.value);
-    },
-    className: "glass-input"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Original Odds (Decimal)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1.01",
-    step: "0.01",
-    value: values.originalOdds,
-    onChange: function onChange(e) {
-      return handleInputChange('originalOdds', e.target.value);
-    },
-    className: "glass-input"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("label", null, "Hedge Odds (Decimal)"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "number",
-    min: "1.01",
-    step: "0.01",
-    value: values.hedgeOdds,
-    onChange: function onChange(e) {
-      return handleInputChange('hedgeOdds', e.target.value);
-    },
-    className: "glass-input"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "calculator-results"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Hedge Bet Amount:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value highlight"
-  }, "$", formatNumber(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).hedgeAmount))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Total Wagered:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value"
-  }, "$", formatNumber(parseFloat(values.originalBet) + parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).hedgeAmount)))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Guaranteed Profit:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value ".concat(parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit) > 0 ? 'positive' : 'negative')
-  }, "$", formatNumber(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-row"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-label"
-  }, "Return on Investment:"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "result-value ".concat(parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit) > 0 ? 'positive' : 'negative')
-  }, (parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit) / (parseFloat(values.originalBet) + parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).hedgeAmount)) * 100).toFixed(2), "%"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "info-box"
-  }, /*#__PURE__*/_react.default.createElement("h4", null, "Using the Hedge Calculator"), /*#__PURE__*/_react.default.createElement("p", null, "Hedging allows you to lock in profits or minimize losses by placing a bet on the opposite outcome. This calculator helps you determine the optimal hedge bet amount to guarantee a profit regardless of outcome.")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "tools-footer"
-  }, /*#__PURE__*/_react.default.createElement("p", {
-    className: "disclaimer"
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-info-circle"
-  }), " These calculators are for informational purposes only. Always verify results and bet responsibly."), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "learn-more-link"
-  }, "Learn more about betting mathematics ", /*#__PURE__*/_react.default.createElement("span", {
-    className: "arrow"
-  }, "\u2192"))));
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "tools-container",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+      className: "tools-title",
+      children: "Betting Tools & Calculators"
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+      className: "tools-description",
+      children: "Powerful calculators to optimize your betting strategy and improve decision making."
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "calculator-selector",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+        className: "calc-tab ".concat(activeCalculator === 'odds' ? 'active' : ''),
+        onClick: function onClick() {
+          return handleCalculatorChange('odds');
+        },
+        disabled: isCalculatorChanging,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+          className: "fas fa-exchange-alt"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: "Odds Converter"
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+        className: "calc-tab ".concat(activeCalculator === 'ev' ? 'active' : ''),
+        onClick: function onClick() {
+          return handleCalculatorChange('ev');
+        },
+        disabled: isCalculatorChanging,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+          className: "fas fa-balance-scale"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: "Expected Value"
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+        className: "calc-tab ".concat(activeCalculator === 'kelly' ? 'active' : ''),
+        onClick: function onClick() {
+          return handleCalculatorChange('kelly');
+        },
+        disabled: isCalculatorChanging,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+          className: "fas fa-percentage"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: "Kelly Criterion"
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+        className: "calc-tab ".concat(activeCalculator === 'parlay' ? 'active' : ''),
+        onClick: function onClick() {
+          return handleCalculatorChange('parlay');
+        },
+        disabled: isCalculatorChanging,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+          className: "fas fa-link"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: "Parlay Calculator"
+        })]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+        className: "calc-tab ".concat(activeCalculator === 'hedge' ? 'active' : ''),
+        onClick: function onClick() {
+          return handleCalculatorChange('hedge');
+        },
+        disabled: isCalculatorChanging,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+          className: "fas fa-shield-alt"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          children: "Hedge Calculator"
+        })]
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "calculator-container card ".concat(calculatorClasses),
+      children: [activeCalculator === 'odds' && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "odds-converter calculator",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+          children: "Odds Converter"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-inputs",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Enter Odds"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "text",
+              value: values.oddsValue,
+              onChange: function onChange(e) {
+                return handleInputChange('oddsValue', e.target.value);
+              },
+              placeholder: "Enter odds value",
+              className: "glass-input"
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Format"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("select", {
+              value: oddsFormat,
+              onChange: function onChange(e) {
+                return setOddsFormat(e.target.value);
+              },
+              className: "glass-input",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "decimal",
+                children: "Decimal"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "american",
+                children: "American"
+              }), /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+                value: "fractional",
+                children: "Fractional"
+              })]
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-results",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Decimal:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-value highlight",
+              children: values.oddsValue ? convertOdds(values.oddsValue, oddsFormat, 'decimal') : '-'
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "American:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-value",
+              children: values.oddsValue ? convertOdds(values.oddsValue, oddsFormat, 'american') : '-'
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Fractional:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-value",
+              children: values.oddsValue ? convertOdds(values.oddsValue, oddsFormat, 'fractional') : '-'
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Implied Probability:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-value accent",
+              children: values.oddsValue && !isNaN(parseFloat(convertOdds(values.oddsValue, oddsFormat, 'decimal'))) ? (100 / parseFloat(convertOdds(values.oddsValue, oddsFormat, 'decimal'))).toFixed(2) + '%' : '-'
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "info-box",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
+            children: "Using the Odds Converter"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: "Enter odds in your preferred format and instantly see conversions to all other formats. This helps compare odds across different sportsbooks and regions."
+          })]
+        })]
+      }), activeCalculator === 'ev' && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "ev-calculator calculator",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+          children: "Expected Value Calculator"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-inputs",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Your Assessed Probability (%)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1",
+              max: "99",
+              value: values.probability,
+              onChange: function onChange(e) {
+                return handleInputChange('probability', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Payout Odds (Decimal)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1.01",
+              step: "0.01",
+              value: values.payoutOdds,
+              onChange: function onChange(e) {
+                return handleInputChange('payoutOdds', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-results",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Expected Value:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value ".concat(parseFloat(calculateEV(values.probability, values.payoutOdds)) > 0 ? 'positive' : 'negative'),
+              children: [calculateEV(values.probability, values.payoutOdds), "%"]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Implied Probability:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: [(100 / values.payoutOdds).toFixed(2), "%"]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Edge:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value ".concat(values.probability - 100 / values.payoutOdds > 0 ? 'positive' : 'negative'),
+              children: [(values.probability - 100 / values.payoutOdds).toFixed(2), "%"]
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          className: "ev-gauge",
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+            className: "ev-gauge-fill",
+            style: {
+              width: "".concat(Math.min(100, Math.max(0, parseFloat(calculateEV(values.probability, values.payoutOdds)) + 50)), "%"),
+              background: parseFloat(calculateEV(values.probability, values.payoutOdds)) > 0 ? 'linear-gradient(90deg, rgba(76, 175, 80, 0.2), rgba(76, 175, 80, 0.8))' : 'linear-gradient(90deg, rgba(244, 67, 54, 0.2), rgba(244, 67, 54, 0.8))'
+            }
+          })
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "info-box",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
+            children: "About Expected Value"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: "Expected Value (EV) helps determine if a bet offers value. A positive EV means the bet is profitable long-term. Always look for bets where your assessed probability is higher than the implied probability from the odds."
+          })]
+        })]
+      }), activeCalculator === 'kelly' && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "kelly-calculator calculator",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+          children: "Kelly Criterion Calculator"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-inputs",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Bankroll ($)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1",
+              step: "1",
+              value: values.bankroll,
+              onChange: function onChange(e) {
+                return handleInputChange('bankroll', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Win Probability (%)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1",
+              max: "99",
+              value: values.kellyWinProb,
+              onChange: function onChange(e) {
+                return handleInputChange('kellyWinProb', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Decimal Odds"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1.01",
+              step: "0.01",
+              value: values.kellyOdds,
+              onChange: function onChange(e) {
+                return handleInputChange('kellyOdds', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-results",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Kelly Percentage:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value highlight",
+              children: [(parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds)) * 100).toFixed(2), "%"]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Suggested Stake:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: ["$", (values.bankroll * parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds))).toFixed(2)]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Half Kelly (Conservative):"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: ["$", (values.bankroll * parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds)) / 2).toFixed(2)]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Quarter Kelly (Very Conservative):"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: ["$", (values.bankroll * parseFloat(calculateKelly(values.kellyWinProb, values.kellyOdds)) / 4).toFixed(2)]
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "info-box",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
+            children: "Bankroll Management"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: "The Kelly Criterion helps optimize your bet sizing for maximum bankroll growth. Many professional bettors use Half Kelly or Quarter Kelly to reduce volatility while still capturing most of the growth potential."
+          })]
+        })]
+      }), activeCalculator === 'parlay' && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "parlay-calculator calculator",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+          children: "Parlay Calculator"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "parlay-legs",
+          children: [values.parlayLegs.map(function (leg, index) {
+            return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "parlay-leg",
+              children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "leg-header",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("span", {
+                  className: "leg-number",
+                  children: ["Leg ", index + 1]
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("button", {
+                  type: "button",
+                  className: "remove-leg-btn",
+                  onClick: function onClick() {
+                    return removeParlayLeg(index);
+                  },
+                  disabled: values.parlayLegs.length <= 1,
+                  children: /*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+                    className: "fas fa-times"
+                  })
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "form-group",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+                  children: "Decimal Odds"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+                  type: "number",
+                  min: "1.01",
+                  step: "0.01",
+                  value: leg.odds,
+                  onChange: function onChange(e) {
+                    return handleParlayLegChange(index, 'odds', e.target.value);
+                  },
+                  className: "glass-input"
+                })]
+              }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+                className: "form-group",
+                children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+                  children: "Probability (%)"
+                }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+                  type: "number",
+                  min: "1",
+                  max: "99",
+                  value: leg.probability,
+                  onChange: function onChange(e) {
+                    return handleParlayLegChange(index, 'probability', e.target.value);
+                  },
+                  className: "glass-input"
+                })]
+              })]
+            }, index);
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("button", {
+            type: "button",
+            className: "add-leg-btn",
+            onClick: addParlayLeg,
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+              className: "fas fa-plus"
+            }), " Add Leg"]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-results mt-lg",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Parlay Odds:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-value highlight",
+              children: calculateParlayOdds(values.parlayLegs)
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Implied Probability:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: [(100 / parseFloat(calculateParlayOdds(values.parlayLegs))).toFixed(2), "%"]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "True Probability:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: [values.parlayLegs.filter(function (leg) {
+                return leg.probability && leg.odds;
+              }).reduce(function (acc, leg) {
+                return acc * (parseFloat(leg.probability) / 100);
+              }, 1) * 100 .toFixed(2), "%"]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Edge:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value ".concat(values.parlayLegs.filter(function (leg) {
+                return leg.probability && leg.odds;
+              }).reduce(function (acc, leg) {
+                return acc * (parseFloat(leg.probability) / 100);
+              }, 1) * 100 - 100 / parseFloat(calculateParlayOdds(values.parlayLegs)) > 0 ? 'positive' : 'negative'),
+              children: [(values.parlayLegs.filter(function (leg) {
+                return leg.probability && leg.odds;
+              }).reduce(function (acc, leg) {
+                return acc * (parseFloat(leg.probability) / 100);
+              }, 1) * 100 - 100 / parseFloat(calculateParlayOdds(values.parlayLegs))).toFixed(2), "%"]
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "info-box",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
+            children: "About Parlays"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: "Parlays combine multiple bets for higher potential payouts, but all legs must win. While tempting, most parlays have negative expected value due to compounding vig. Use this calculator to find rare +EV parlay opportunities."
+          })]
+        })]
+      }), activeCalculator === 'hedge' && /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "hedge-calculator calculator",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h3", {
+          children: "Hedge Calculator"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-inputs",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Original Bet Amount ($)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1",
+              step: "1",
+              value: values.originalBet,
+              onChange: function onChange(e) {
+                return handleInputChange('originalBet', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Original Odds (Decimal)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1.01",
+              step: "0.01",
+              value: values.originalOdds,
+              onChange: function onChange(e) {
+                return handleInputChange('originalOdds', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "form-group",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+              children: "Hedge Odds (Decimal)"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+              type: "number",
+              min: "1.01",
+              step: "0.01",
+              value: values.hedgeOdds,
+              onChange: function onChange(e) {
+                return handleInputChange('hedgeOdds', e.target.value);
+              },
+              className: "glass-input"
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "calculator-results",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Hedge Bet Amount:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value highlight",
+              children: ["$", formatNumber(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).hedgeAmount)]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Total Wagered:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value",
+              children: ["$", formatNumber(parseFloat(values.originalBet) + parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).hedgeAmount))]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Guaranteed Profit:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value ".concat(parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit) > 0 ? 'positive' : 'negative'),
+              children: ["$", formatNumber(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit)]
+            })]
+          }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+            className: "result-row",
+            children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+              className: "result-label",
+              children: "Return on Investment:"
+            }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+              className: "result-value ".concat(parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit) > 0 ? 'positive' : 'negative'),
+              children: [(parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).profit) / (parseFloat(values.originalBet) + parseFloat(calculateHedge(values.originalBet, values.originalOdds, values.hedgeOdds).hedgeAmount)) * 100).toFixed(2), "%"]
+            })]
+          })]
+        }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+          className: "info-box",
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h4", {
+            children: "Using the Hedge Calculator"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: "Hedging allows you to lock in profits or minimize losses by placing a bet on the opposite outcome. This calculator helps you determine the optimal hedge bet amount to guarantee a profit regardless of outcome."
+          })]
+        })]
+      })]
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "tools-footer",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("p", {
+        className: "disclaimer",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("i", {
+          className: "fas fa-info-circle"
+        }), " These calculators are for informational purposes only. Always verify results and bet responsibly."]
+      }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("a", {
+        href: "#",
+        className: "learn-more-link",
+        children: ["Learn more about betting mathematics ", /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
+          className: "arrow",
+          children: "\u2192"
+        })]
+      })]
+    })]
+  });
 };
 var _default = exports.default = Tools;
-},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/defineProperty":"IxO8","@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK"}],"lY9v":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"Fhqp","@babel/runtime/helpers/defineProperty":"IxO8","@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK","react/jsx-runtime":"plwR"}],"lY9v":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55938,12 +56625,12 @@ var _Footer = _interopRequireDefault(require("./components/Footer"));
 var _BetLogger = _interopRequireDefault(require("./components/BetLogger"));
 var _AIAssistant = _interopRequireDefault(require("./components/AIAssistant"));
 var _Tools = _interopRequireDefault(require("./components/Tools"));
+var _jsxRuntime = require("react/jsx-runtime");
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-// Main App component with navigation and error handling
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); } // Main App component with navigation and error handling
 function App() {
   var _useState = (0, _react.useState)(false),
     _useState2 = (0, _slicedToArray2.default)(_useState, 2),
@@ -55977,55 +56664,64 @@ function App() {
   // Render content based on active page
   var renderContent = function renderContent() {
     if (!isLoaded) {
-      return /*#__PURE__*/_react.default.createElement("div", {
-        className: "loading-container"
-      }, /*#__PURE__*/_react.default.createElement("div", {
-        className: "loading-spinner"
-      }), /*#__PURE__*/_react.default.createElement("p", null, "Loading content..."));
+      return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+        className: "loading-container",
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+          className: "loading-spinner"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+          children: "Loading content..."
+        })]
+      });
     }
     if (hasError) {
-      return /*#__PURE__*/_react.default.createElement(_SimpleRecoveryDashboard.default, null);
+      return /*#__PURE__*/(0, _jsxRuntime.jsx)(_SimpleRecoveryDashboard.default, {});
     }
     switch (activePage) {
       case 'logger':
-        return /*#__PURE__*/_react.default.createElement(ErrorBoundary, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(ErrorBoundary, {
           onError: function onError() {
             return setHasError(true);
-          }
-        }, /*#__PURE__*/_react.default.createElement(_BetLogger.default, null));
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_BetLogger.default, {})
+        });
       case 'assistant':
-        return /*#__PURE__*/_react.default.createElement(ErrorBoundary, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(ErrorBoundary, {
           onError: function onError() {
             return setHasError(true);
-          }
-        }, /*#__PURE__*/_react.default.createElement(_AIAssistant.default, null));
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_AIAssistant.default, {})
+        });
       case 'tools':
-        return /*#__PURE__*/_react.default.createElement(ErrorBoundary, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(ErrorBoundary, {
           onError: function onError() {
             return setHasError(true);
-          }
-        }, /*#__PURE__*/_react.default.createElement(_Tools.default, null));
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Tools.default, {})
+        });
       case 'dashboard':
       default:
-        return /*#__PURE__*/_react.default.createElement(ErrorBoundary, {
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(ErrorBoundary, {
           onError: function onError() {
             return setHasError(true);
-          }
-        }, /*#__PURE__*/_react.default.createElement(_Dashboard.default, {
-          navigateToBetLogger: function navigateToBetLogger() {
-            return navigate('logger');
-          }
-        }));
+          },
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Dashboard.default, {
+            navigateToBetLogger: function navigateToBetLogger() {
+              return navigate('logger');
+            }
+          })
+        });
     }
   };
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "app-container"
-  }, /*#__PURE__*/_react.default.createElement(_Header.default, {
-    navigate: navigate,
-    activePage: activePage
-  }), /*#__PURE__*/_react.default.createElement("main", {
-    className: "main-content"
-  }, renderContent()), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
+  return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+    className: "app-container",
+    children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_Header.default, {
+      navigate: navigate,
+      activePage: activePage
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("main", {
+      className: "main-content",
+      children: renderContent()
+    }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_Footer.default, {})]
+  });
 }
 
 // Error boundary component
@@ -56052,7 +56748,7 @@ var ErrorBoundary = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.hasError) {
-        return /*#__PURE__*/_react.default.createElement(_SimpleRecoveryDashboard.default, null);
+        return /*#__PURE__*/(0, _jsxRuntime.jsx)(_SimpleRecoveryDashboard.default, {});
       }
       return this.props.children;
     }
@@ -56066,7 +56762,7 @@ var ErrorBoundary = /*#__PURE__*/function (_React$Component) {
   }]);
 }(_react.default.Component);
 var _default = exports.default = App;
-},{"@babel/runtime/helpers/classCallCheck":"fcMS","@babel/runtime/helpers/createClass":"P8NW","@babel/runtime/helpers/possibleConstructorReturn":"pxk2","@babel/runtime/helpers/getPrototypeOf":"UJE0","@babel/runtime/helpers/inherits":"d4H2","@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK","./components/Dashboard":"mh1v","./components/SimpleRecoveryDashboard":"KTYD","./components/Header":"RzfG","./components/Footer":"fZmu","./components/BetLogger":"pfL5","./components/AIAssistant":"TqGw","./components/Tools":"jZUz"}],"vKFU":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"fcMS","@babel/runtime/helpers/createClass":"P8NW","@babel/runtime/helpers/possibleConstructorReturn":"pxk2","@babel/runtime/helpers/getPrototypeOf":"UJE0","@babel/runtime/helpers/inherits":"d4H2","@babel/runtime/helpers/slicedToArray":"HETk","react":"n8MK","./components/Dashboard":"mh1v","./components/SimpleRecoveryDashboard":"KTYD","./components/Header":"RzfG","./components/Footer":"fZmu","./components/BetLogger":"pfL5","./components/AIAssistant":"TqGw","./components/Tools":"jZUz","react/jsx-runtime":"plwR"}],"vKFU":[function(require,module,exports) {
 
 },{}],"NdAl":[function(require,module,exports) {
 'use strict';
@@ -56106,10 +56802,10 @@ var _react = _interopRequireDefault(require("react"));
 var _reactDom = _interopRequireDefault(require("react-dom"));
 var _App = _interopRequireDefault(require("./App"));
 require("./index.css");
+var _jsxRuntime = require("react/jsx-runtime");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function _callSuper(t, o, e) { return o = (0, _getPrototypeOf2.default)(o), (0, _possibleConstructorReturn2.default)(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], (0, _getPrototypeOf2.default)(t).constructor) : o.apply(t, e)); }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-// Basic CSS import if needed
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); } // Basic CSS import if needed
 // Simple error boundary
 var ErrorBoundary = /*#__PURE__*/function (_React$Component) {
   function ErrorBoundary(props) {
@@ -56127,15 +56823,20 @@ var ErrorBoundary = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       if (this.state.hasError) {
-        return /*#__PURE__*/_react.default.createElement("div", {
+        return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
           style: {
             color: 'white',
             backgroundColor: '#660000',
             padding: '20px',
             margin: '20px',
             borderRadius: '5px'
-          }
-        }, /*#__PURE__*/_react.default.createElement("h2", null, "Something went wrong"), /*#__PURE__*/_react.default.createElement("p", null, this.state.error && this.state.error.toString()));
+          },
+          children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("h2", {
+            children: "Something went wrong"
+          }), /*#__PURE__*/(0, _jsxRuntime.jsx)("p", {
+            children: this.state.error && this.state.error.toString()
+          })]
+        });
       }
       return this.props.children;
     }
@@ -56162,13 +56863,14 @@ if (!targetElement) {
   var emergencyRoot = document.createElement('div');
   emergencyRoot.id = 'emergency-root';
   document.body.appendChild(emergencyRoot);
-  _reactDom.default.render(/*#__PURE__*/_react.default.createElement("div", {
+  _reactDom.default.render(/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
     style: {
       padding: '20px',
       color: 'red',
       backgroundColor: '#222'
-    }
-  }, "Emergency Rendering: No valid container found in your HTML.", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_App.default, null)), emergencyRoot);
+    },
+    children: ["Emergency Rendering: No valid container found in your HTML.", /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)("br", {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_App.default, {})]
+  }), emergencyRoot);
 } else {
   console.log('Found target element:', targetElement.id);
 
@@ -56178,7 +56880,11 @@ if (!targetElement) {
     var _require = require('react-dom/client'),
       createRoot = _require.createRoot;
     var root = createRoot(targetElement);
-    root.render(/*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(ErrorBoundary, null, /*#__PURE__*/_react.default.createElement(_App.default, null))));
+    root.render(/*#__PURE__*/(0, _jsxRuntime.jsx)(_react.default.StrictMode, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(ErrorBoundary, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_App.default, {})
+      })
+    }));
     console.log('Successfully rendered with createRoot');
   } catch (error) {
     console.error('Error with createRoot:', error);
@@ -56186,7 +56892,11 @@ if (!targetElement) {
     // Fall back to legacy method
     try {
       console.log('Falling back to ReactDOM.render');
-      _reactDom.default.render(/*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(ErrorBoundary, null, /*#__PURE__*/_react.default.createElement(_App.default, null))), targetElement);
+      _reactDom.default.render(/*#__PURE__*/(0, _jsxRuntime.jsx)(_react.default.StrictMode, {
+        children: /*#__PURE__*/(0, _jsxRuntime.jsx)(ErrorBoundary, {
+          children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_App.default, {})
+        })
+      }), targetElement);
       console.log('Successfully rendered with ReactDOM.render');
     } catch (error) {
       console.error('All rendering methods failed:', error);
@@ -56212,5 +56922,5 @@ window.addEventListener('load', function () {
     }
   }, 1000);
 });
-},{"@babel/runtime/helpers/classCallCheck":"fcMS","@babel/runtime/helpers/createClass":"P8NW","@babel/runtime/helpers/possibleConstructorReturn":"pxk2","@babel/runtime/helpers/getPrototypeOf":"UJE0","@babel/runtime/helpers/inherits":"d4H2","react":"n8MK","react-dom":"NKHc","./App":"lY9v","./index.css":"vKFU","react-dom/client":"NdAl"}]},{},["Focm"], null)
+},{"@babel/runtime/helpers/classCallCheck":"fcMS","@babel/runtime/helpers/createClass":"P8NW","@babel/runtime/helpers/possibleConstructorReturn":"pxk2","@babel/runtime/helpers/getPrototypeOf":"UJE0","@babel/runtime/helpers/inherits":"d4H2","react":"n8MK","react-dom":"NKHc","./App":"lY9v","./index.css":"vKFU","react/jsx-runtime":"plwR","react-dom/client":"NdAl"}]},{},["Focm"], null)
 //# sourceMappingURL=src.e31bb0bc.js.map
