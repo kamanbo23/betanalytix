@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BetAnalytix Dashboard</title>
+    <style>
+      /* Override any problematic global styles */
+      body, html {
+        margin: 0;
+        padding: 0;
+        background-color: #0a0a0a;
+        color: white;
+        height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      
+      #root {
+        height: 100%;
+      }
+      
+      /* Loading indicator */
+      .loading-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #ff7e00;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="loading-indicator">Loading BetAnalytix...</div>
+    <!-- Root element for React -->
+    <script>
+      console.log('HTML document loaded, checking for #root element:', document.getElementById('root'));
+      
+      // Force create the root element if it doesn't exist when this script runs
+      if (!document.getElementById('root')) {
+        console.warn('Root element not found in initial HTML, creating it manually');
+        const rootElement = document.createElement('div');
+        rootElement.id = 'root';
+        document.body.appendChild(rootElement);
+        console.log('Root element created:', rootElement);
+      }
+    </script>
+  </body>
+</html> 
