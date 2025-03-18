@@ -1,10 +1,10 @@
-# BetAnalytix
+# PUNCHLINEBETS
 
 Advanced Sports Betting Analytics & Strategy Studio
 
 ## Overview
 
-BetAnalytix is a web-based platform designed to help users analyze their sports betting history, identify patterns, and optimize their betting strategies. The application provides visual analytics, trend analysis, and insights to improve betting performance.
+PUNCHLINEBETS is a web-based platform designed to help users analyze their sports betting history, identify patterns, and optimize their betting strategies. The application provides visual analytics, trend analysis, and insights to improve betting performance.
 
 ## Features
 
